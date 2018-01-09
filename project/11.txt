@@ -1,0 +1,5 @@
+zadanie 11
+
+1. start 14.05
+2. html/css/js
+3. rwd obowiazkowo

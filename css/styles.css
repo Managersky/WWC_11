@@ -1,0 +1,36 @@
+/* Reset stylów przeglądarki */
+
+@import url(reset.css);
+
+/* Czcionki i ułożenie elementów na stronie */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    max-height: 1375px;
+    margin: 0 auto;
+}
+
+/* Style ogólne */
+
+/* Nagłówek */
+
+/* Główna zawartość witryny */
+
+/* Stopka */
+
+/* Media Queries */
