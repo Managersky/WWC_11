@@ -4,33 +4,149 @@
 
 /* Czcionki i ułożenie elementów na stronie */
 
+@font-face {
+    font-family: "Chunk Five";
+    src: url("../fonts/Chunkfive.otf");
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+    box-sizing: border-box; /* css3 rec */
+    -moz-box-sizing: border-box; /* ff2 */
+    -ms-box-sizing: border-box; /* ie8 */
+    -webkit-box-sizing: border-box; /* safari3 */
+    -khtml-box-sizing: border-box; /* konqueror */
+    color: #ffffff;
 }
 
 body {
-    background-image: url("../images/background.jpg");
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
 }
 
 #wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1050px;
-    max-height: 1375px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Style ogólne */
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Nagłówek */
 
+.page-header {
+    height: 168px;
+    background-color: #9bddd8;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.81px;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+/* Menu */
+
+.menu-items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.menu-items li a {
+    padding: 20px 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.menu-items .active {
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+
+.menu-items .menu-icon a {
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+.user-account {
+    background-image: url("../images/user-logo.png");
+}
+
 /* Główna zawartość witryny */
+
+.intro-section {
+    min-height: 597px;
+    background-image: url("../images/image-background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.intro-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header h2 {
+    color: #ffffff;
+    font-family: "Chunk Five";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+
+.section-header h2 span {
+    color: #01a2a6;
+}
+
+.section-header p {
+    text-align: center;
+}
 
 /* Stopka */
 
