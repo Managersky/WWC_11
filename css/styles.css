@@ -182,7 +182,45 @@ img {
     background-color: #ffffff;
     opacity: 0.9;
     width: 100%;
-    min-height: 44px;
+    min-height: 75px;
+}
+
+/* information section */
+
+.info-section {
+    min-height: 448px;
+}
+
+.info-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1109px;
+}
+
+.info-section img {
+    margin: 108px auto;
+}
+.page-info {
+    max-width: 562px;
+    margin: 31px auto 31px 95px;
+}
+
+.page-info h2 {
+    color: #29d9c2;
+    font-family: "Chunk Five";
+    font-size: 60px;
+    line-height: 1.3em;
+}
+
+.page-info h2 span {
+    color: #01a2a6;
+}
+
+.page-info p {
+    color: #777777;
+    font-size: 16px;
+    margin-top: 57px;
 }
 
 /* Stopka */
