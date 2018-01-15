@@ -9,6 +9,26 @@
     src: url("../fonts/Chunkfive.otf");
 }
 
+@font-face {
+    font-family: "Lato - Black";
+    src: url("../fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato - Heavy";
+    src: url("../fonts/Lato-Heavy.ttf");
+}
+
+@font-face {
+    font-family: "Lato - Medium Italic";
+    src: url("../fonts/Lato-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Lato - Semibold";
+    src: url("../fonts/Lato-Semibold.ttf");
+}
+
 * {
     box-sizing: border-box; /* css3 rec */
     -moz-box-sizing: border-box; /* ff2 */
@@ -23,19 +43,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 35px;
-}
-
-#wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Style ogólne */
@@ -53,6 +60,12 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
 /* Nagłówek */
@@ -118,24 +131,28 @@ img {
 
 /* Główna zawartość witryny */
 
+/* Intro Section */
+
 .intro-section {
-    min-height: 597px;
     background-image: url("../images/image-background.png");
+    background-color: #9bddd8;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    min-height: 600px;
+    
 }
 
 .intro-section .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 48px;
 }
 
 .section-header h2 {
     color: #ffffff;
     font-family: "Chunk Five";
     font-size: 80px;
-    font-weight: 400;
     line-height: 1.3em;
     text-transform: uppercase;
 }
@@ -148,6 +165,26 @@ img {
     text-align: center;
 }
 
+.intro-section .intro-cta {
+    margin-top: 47px;
+}
+
+.btn-primary {
+    padding: 30px 38px;
+    background-color: #ffffa6;
+    color: #10273d;
+    font-family: "Lato - Black";
+}
+
+.intro-stripe {
+    position: relative;
+    top: 252px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    min-height: 44px;
+}
+
 /* Stopka */
 
-/* Media Queries */
+/* Media Queries*/
