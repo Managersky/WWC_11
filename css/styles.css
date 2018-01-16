@@ -35,7 +35,7 @@
     -ms-box-sizing: border-box; /* ie8 */
     -webkit-box-sizing: border-box; /* safari3 */
     -khtml-box-sizing: border-box; /* konqueror */
-    color: #ffffff;
+    color : #777777;
 }
 
 body {
@@ -71,7 +71,7 @@ img {
 /* Nagłówek */
 
 .page-header {
-    height: 168px;
+    min-height: 168px;
     background-color: #9bddd8;
 }
 
@@ -79,6 +79,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 53px;
 }
 
 .container .logo {
@@ -86,10 +87,12 @@ img {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.81px;
+    color: #ffffff;
 }
 
 .logo span {
     font-weight: 400;
+    color: #ffffff;
 }
 
 /* Menu */
@@ -112,6 +115,7 @@ img {
     font-size: 14px;
     line-height: 1.2em;
     font-weight: 500;
+    color: #ffffff;
 }
 
 .menu-items .active {
@@ -119,14 +123,11 @@ img {
     border-radius: 20px;
 }
 
-.menu-items .menu-icon a {
+.user-account {
+    background-image: url("../images/user-logo.png");
     background-repeat: no-repeat;
     width: 44px;
     height: 44px;
-}
-
-.user-account {
-    background-image: url("../images/user-logo.png");
 }
 
 /* Główna zawartość witryny */
@@ -163,6 +164,7 @@ img {
 
 .section-header p {
     text-align: center;
+    color: #ffffff;
 }
 
 .intro-section .intro-cta {
@@ -201,7 +203,7 @@ img {
 .info-section img {
     margin: 108px auto;
 }
-.page-info {
+.info-section .page-info {
     max-width: 562px;
     margin: 31px auto 31px 95px;
 }
@@ -222,6 +224,108 @@ img {
     font-size: 16px;
     margin-top: 57px;
 }
+
+/* Gallery Section */
+
+.gallery-section {
+    min-height: 1455px;
+    background-color: #f2fefe;
+}
+
+.gallery-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Gallery Information */
+
+.container .info-content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 174px;
+    width: 963px;
+    margin: 68px auto;
+}
+
+.info-content .page-info {
+    width: 70%;
+}
+
+.btn-information {
+    margin-top: 2%;
+}
+
+.btn-information a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-information p {
+    font-family: Lato;
+    color: #aeaeae;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+/* Search Gallery */
+
+.container .search-content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 35px;
+    width: 963px;
+    margin: 20px auto;
+}
+
+.search-content .btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 234px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.search-content .btn-search img {
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.search-content .btn-search .search {
+    color: #b5b5b5;
+    font-family: "Lato - Medium Italic";
+    font-size: 14px;
+    letter-spacing: 0.08px;
+    width: 80%;
+    border: 0;
+    padding-left: 11px;
+}
+
+.search-content .btn-place {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-place .btn-gallery {
+    color: #aeaeae;
+    font-size: 16px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: auto 10px;
+}
+
+.btn-place .active, 
+.btn-place p {
+    color: #777777;
+    font-family: "Lato - Black";
+}
+
 
 /* Stopka */
 
