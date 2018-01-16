@@ -326,6 +326,68 @@ img {
     font-family: "Lato - Black";
 }
 
+/* Gallery */
+
+.container .major-gallery { /* tbd */
+    background-image: url("../images/parachute.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1170px;
+    margin-bottom: 33px;
+}
+
+.major-gallery .main-graphic {
+    min-height: 517px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-shadow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.btn-shadow a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 187px; 
+}
+
+.btn-shadow p {
+    color: #f6f6f6;
+    font-family: Lato;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.major-gallery .major-gallery-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("../images/layout-gallery.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 40%;       
+}
+
+.major-gallery .major-gallery-info .page-info {
+    margin: 50px 60px 75px 45px;
+}
+
+.major-gallery-info .page-info h3 {
+    color: #01a2a6;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.major-gallery-info .page-info p {
+    margin-top: 23px;
+    font-weight: 700;
+}
 
 /* Stopka */
 
