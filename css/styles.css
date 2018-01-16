@@ -483,6 +483,128 @@ img {
     background-color: #ddd;
 }
 
+/* Planning Section */
+
+/* Header */
+
+.planner-section .container {
+    padding: 72px 135px 98px 135px;
+    min-height: 1111px;
+}
+
+.planner-section .container .page-info {
+    text-align: center;
+}
+
+/* Ittinery Box */
+
+.planning-menu {
+    margin-top: 142px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.planning-menu .ittinery-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 670px;
+    height: 714px;
+    background-color: #ffffa6;
+}
+
+.ittinery-box .ittinery-content {
+    margin-top: 26px;
+    width: 597px;
+    height: 522px;
+}
+
+/* Ittinery box title */
+
+.planning-menu .ittinery-box .ittinery-title {
+    background-image: url("../images/ittinery-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 74px;
+    width: 100%;
+}
+
+.ittinery-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ittinery-title .btn-title {
+    color: #ffffff;
+    font-family: "Lato - Black";
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
+input[type="text"].btn-title::-webkit-input-placeholder {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Ittinery timetable */
+
+.ittinery-content .ittinery-timetable {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ittinery-content .ittinery-timetable p {
+    color: #29d9c2;
+    font-family: "Lato - Black";
+    font-size: 16px;
+}
+
+.ittinery-content .ittinery-timetable .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ittinery-content .ittinery-timetable .date p {
+    margin-right: 10px;
+    font-family: "Lato - Heavy";
+}
+
+.btn-planning {
+    display: flex;
+    justify-content: flex-end;
+    width: 670px;
+}
+
+.btn-planning a {
+    padding: 30px 38px;
+    opacity: 0.9;
+    color: #ffffff;
+    font-family: "Lato - Heavy";
+    margin-top: 17px;
+    margin-left: 25px;
+}
+
+.btn-save-as-pdf {
+    display: flex;
+    align-items: center;
+    background-color: #bdf271;
+}
+
+.btn-print {
+    display: flex;
+    align-items: center;
+    background-color: #28d7c1;
+}
+
+.btn-save-as-pdf img,
+.btn-print img {
+    margin-right: 12px;
+}
+
 /* Stopka */
 
 /* Media Queries*/
