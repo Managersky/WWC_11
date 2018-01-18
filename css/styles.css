@@ -223,7 +223,7 @@ img {
     color: #01a2a6;
 }
 
-.page-info p {
+.info-section .page-info p {
     color: #777777;
     font-size: 16px;
     margin-top: 57px;
@@ -492,6 +492,7 @@ img {
     justify-content: center;
     flex-direction: column;
     min-height: 1111px;
+    margin-bottom: 98px;
 }
 
 .container .planner-section-content {
@@ -832,6 +833,185 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     font-size: 14px;
     margin-top: -15px;
 }
+
+/* Contact Section */
+
+.contact-section {
+    background-image: url("../images/contact-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.contact-section::before {
+    background-color: #01a2a6;
+    opacity: 0.8;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-section .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 667px;
+    position: relative;
+}
+
+.contact-section .container h2 {
+    color: #ffffff;
+    font-family: "Chunk Five";
+    font-size: 67px; 
+    margin: 89px auto;
+}
+
+.contact-section .container .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.container .contact-content .separator {
+    margin: auto 100px;
+    min-height: 127px; 
+}
+
+.container .contact-content .separator p {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Contact Form */
+
+.contact-form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 469px;
+}
+
+.contact-form form input::-webkit-input-placeholder,
+.contact-form form textarea::-webkit-input-placeholder {
+    color: #b9b9b9;
+    font-family: "Lato - Medium Italic";
+    font-size: 14px;
+}
+
+.contact-form form input {
+    margin-bottom: 21px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding-left: 23px;
+}
+
+.contact-form form .btn-email {
+    width: 100%;
+    min-height: 55px; 
+}
+
+.contact-form form .btn-info {
+    width: 48%;
+    min-height: 55px;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    min-height: 96px;
+    border-radius: 5px;
+    resize: none;
+    padding: 23px;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-button .btn-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3f37f;
+    opacity: 0.9;
+    color: #ffffff;
+    font-family: "Lato - Heavy";
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 27px 25px;
+    max-height: 67px;
+    margin-top: 27px;
+}
+
+/* Contact Information */
+
+.contact-content .contact-info h3 {
+    color: #ffffff;
+    font-size: 44px;
+    letter-spacing: 0.22px;
+    margin-top: 6px;
+    margin-bottom: 64px;
+}
+
+.contact-content .contact-info .contact-us a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-content .contact-info .contact-us a p {
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.contact-content .contact-info .contact-us span {
+    color: #fff772;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-left: 22px;
+    margin-top: -18px;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+    background-color: #bdf271;
+}
+
+.subscribe-section .container {
+    min-height: 217px;
+    background-image: url("../images/subscribe-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60% 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe-section .container h2 {
+    color: #ffffff;
+    font-size: 67px;
+}
+
+.subscribe-section .container p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
+
 
 /* Stopka */
 
