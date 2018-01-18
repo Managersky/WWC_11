@@ -108,7 +108,7 @@ img {
     align-items: center;
 }
 
-.menu-items li {
+.page-header .menu-items li {
     margin: 0 5px;
     display: inline-block;
 }
@@ -993,10 +993,17 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     background-image: url("../images/subscribe-background.png");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 60% 100%;
+    background-size: 55% 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.subscribe-section .container .subscribe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 
 .subscribe-section .container h2 {
@@ -1061,10 +1068,24 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     align-items: flex-start;
 }
 
-.container .menu-items {
+.page-footer .container .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 80%;
+}
+
+.footer-content .menu-items li a {
+    color: #5d5c5c;
+}
+
+.footer-content .first-nav li:nth-child(2)::before,
+.footer-content .first-nav li:nth-child(3)::before {
+    content: "•";
+}
+
+.container .menu-items .menu-icon {
+    margin-top: 19px;
+    margin-left: 11px
 }
 
 .container .menu-items .facebook-icon {
