@@ -1,8 +1,8 @@
-/* Reset stylów przeglądarki */
+/* Reset CSS */
 
 @import url(reset.css);
 
-/* Czcionki i ułożenie elementów na stronie */
+/* Fonts and positioning */
 
 @font-face {
     font-family: "Chunk Five";
@@ -45,7 +45,7 @@ body {
     line-height: 35px;
 }
 
-/* Style ogólne */
+/* General styles */
 
 .container {
     max-width: 1440px;
@@ -72,7 +72,7 @@ img {
     font-weight: 700;
 }
 
-/* Nagłówek */
+/* Header */
 
 .page-header {
     min-height: 168px;
@@ -99,7 +99,7 @@ img {
     color: #ffffff;
 }
 
-/* Menu */
+/* Header menu */
 
 .menu-items {
     padding: 0;
@@ -122,9 +122,24 @@ img {
     color: #ffffff;
 }
 
+.menu-items li a:hover {
+    color: #01a2a6;
+}
+
+.menu-items li .active:hover {
+    color: #ffffff;
+}
+
 .menu-items .active {
     border: 3px solid #ffffff;
     border-radius: 20px;
+}
+
+.account-btn {
+    background-image: url("../images/arrow-account.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 10px;
 }
 
 .user-account {
@@ -144,7 +159,7 @@ img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 600px;
-    
+
 }
 
 .intro-section .container {
@@ -1119,3 +1134,138 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 }
 
 /* Media Queries*/
+
+@media (max-width: 768px) {
+
+    .page-header {
+        min-height: 5rem;
+    }
+
+    .page-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        background-color: #9bddd8;
+        position: fixed;
+        z-index: 1;
+        padding-top: 0px;
+    }
+
+    .container .logo {
+        margin-left: 5%;
+    }
+
+    .menu-items {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .page-header .menu-items li {
+        margin: 15px 10px;
+    }
+
+    .page-header .menu-items li:last-child {
+        order: -1;
+    }
+
+    .nav {
+        -webkit-transition: right 0.5s ease;
+        -moz-transition: right 0.5s ease;
+        -ms-transition: right 0.5s ease;
+        -o-transition: right 0.5s ease;
+        transition: right 0.5s ease;
+        background: #9bddd8;
+        cursor: pointer;
+        height: 100vh;
+        width: 20vh;
+        right: -20rem;
+        padding: 6rem 2rem 2rem 2rem;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .nav.expanded {
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 15%;
+    }
+
+    .nav-toggle {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        height: 1rem;
+        width: 3rem;
+        top: 2rem;
+        right: 3rem;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .nav-toggle:hover {
+        opacity: 0.8;
+    }
+
+    .nav-toggle .nav-toggle-bar,
+    .nav-toggle .nav-toggle-bar::after,
+    .nav-toggle .nav-toggle-bar::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background: white;
+        content: '';
+        height: 0.4rem;
+        width: 100%;
+    }
+
+    .nav-toggle .nav-toggle-bar {
+        margin-top: 0;
+    }
+
+    .nav-toggle .nav-toggle-bar::after {
+        margin-top: 0.8rem;
+    }
+
+    .nav-toggle .nav-toggle-bar::before {
+        margin-top: -0.8rem;
+    }
+
+    .nav-toggle.expanded .nav-toggle-bar {
+        background: transparent;
+    }
+
+    .nav-toggle.expanded .nav-toggle-bar::after,
+    .nav-toggle.expanded .nav-toggle-bar::before {
+        background: white;
+        margin-top: 0;
+    }
+
+    .nav-toggle.expanded .nav-toggle-bar::after {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle.expanded .nav-toggle-bar::before {
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}

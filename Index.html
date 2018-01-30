@@ -8,6 +8,7 @@
 	<title>WWC-11</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/hamburgerMenu.js" async></script>
 </head>
 
 <body>
@@ -17,15 +18,17 @@
 		<header class="page-header">
 			<div class="container">
 				<p class="logo"><span>Yok</span>Ngalam</p>
-				<nav>
+				<div class="nav-toggle">
+					<div class="nav-toggle-bar"></div>
+				</div>
+				<nav class="nav">
 					<ul class="menu-items">
 						<li><a href="#" class="active">Home</a></li>
 						<li><a href="#">Destination</a></li>
 						<li><a href="#">Ittinary</a></li>
 						<li><a href="#">Review</a></li>
 						<li><a href="#">Contact</a></li>
-						<li class="menu-icon"><a href="#" class="user-account"></a></li>
-						<img src="../images/arrow-account.png" alt="arrow-account">
+						<li class="account-btn"><a href="#" class="user-account"></a></li>
 					</ul>
 				</nav>
 			</div>
