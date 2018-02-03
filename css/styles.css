@@ -1216,7 +1216,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         align-items: center;
         height: 5rem;
         background-color: #9bddd8;
-        position: fixed;
         z-index: 1;
         padding-top: 0px;
     }
@@ -1242,6 +1241,12 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 
 /* Hamburger menu styles */
     .nav {
+        display: none;
+    }
+
+    .nav.expanded {
+        display: flex;
+        justify-content: center;
         -webkit-transition: right 0.5s ease;
         -moz-transition: right 0.5s ease;
         -ms-transition: right 0.5s ease;
@@ -1250,17 +1255,11 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         background: #9bddd8;
         cursor: pointer;
         height: 100vh;
-        width: 20vh;
-        right: -20rem;
+        width: 100vh;
+        right: 0;
         position: fixed;
         top: 0;
         z-index: 1;
-    }
-
-    .nav.expanded {
-        right: 0;
-        display: flex;
-        justify-content: center;
     }
 
     .nav ul {
