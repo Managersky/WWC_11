@@ -9,18 +9,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/jquery.scrollTo.js" defer></script>
+	<script src="js/jquery.scrollTo.min.js" defer></script>
+	<script src="js/scrollTo.js" defer></script>
 	<script src="js/hamburgerMenu.js" defer></script>
-<script defer>
-		jQuery(function ($) {
-				//reset scroll
-				$.scrollTo(0);
-
-				$('#itemDestination').click(function () { $.scrollTo($('#test'), 500); });
-
-			}
-			);
-	</script>
 </head>
 
 <body>
@@ -57,7 +48,7 @@
 					<p>Malang will never dissapointed you. <br>From every step you took you will be amazed and suddenly fallin love with Malang</p>
 				</div>
 				<section class="intro-cta">
-					<a href="#" class="btn btn-primary">Set ittinery now</a>
+					<a href="#" class="btn btn-primary" id="cta-btn">Set ittinery now</a>
 				</section>
 				<div class="intro-stripe"></div>
 			</div>
@@ -156,7 +147,7 @@
 		<section class="planner-section">
 			<div class="container">
 				<div class="page-info">
-					<h2 id="test">Set <span>Ittinery</span></h2>
+					<h2>Set <span>Ittinery</span></h2>
 					<p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. <br>have a great trip!</p>
 				</div>
 				<div class="planner-section-content">
