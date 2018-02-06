@@ -8,7 +8,19 @@
 	<title>WWC-11</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/hamburgerMenu.js" async></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.scrollTo.js" defer></script>
+	<script src="js/hamburgerMenu.js" defer></script>
+<script defer>
+		jQuery(function ($) {
+				//reset scroll
+				$.scrollTo(0);
+
+				$('#itemDestination').click(function () { $.scrollTo($('#test'), 500); });
+
+			}
+			);
+	</script>
 </head>
 
 <body>
@@ -144,7 +156,7 @@
 		<section class="planner-section">
 			<div class="container">
 				<div class="page-info">
-					<h2>Set <span>Ittinery</span></h2>
+					<h2 id="test">Set <span>Ittinery</span></h2>
 					<p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. <br>have a great trip!</p>
 				</div>
 				<div class="planner-section-content">
