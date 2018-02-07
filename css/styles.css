@@ -422,25 +422,25 @@ h2 span {
     margin-bottom: 77px;
 }
 
-.minor-gallery .main-graphic {
+/* .minor-gallery .main-graphic {
     display: flex;
     justify-content: space-between;
     background-image: url("../images/mountains-background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 58%;
-}
+} */
 
-.minor-gallery .page-info {
+/* .minor-gallery .page-info {
     background-image: url("../images/layout-gallery-small.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     opacity: 0.9;
     width: 60%;
     padding: 44px 38px 40px 29px;
-}
+} */
 
-.minor-gallery .minor-gallery-additional {
+/* .minor-gallery .minor-gallery-additional {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -454,7 +454,7 @@ h2 span {
 .minor-gallery-additional .btn-shadow {
     margin-top: 78px;
     width: 100%;
-}
+} */
 
 /* Pagitation */
 
@@ -489,7 +489,7 @@ h2 span {
     justify-content: space-between;
     flex-direction: column;
     width: 90%;
-    margin-bottom: 98px;
+    margin-bottom: 4rem;
 }
 
 .planner-section .container .page-info {
@@ -691,7 +691,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 .btn-planning {
     display: flex;
     justify-content: flex-end;
-    width: 670px;
+    width: 100%;
 }
 
 .btn-planning a {
@@ -778,7 +778,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     background-repeat: no-repeat;
     width: 14px;
     height: 14px;
-    margin-right: 25px;
 }
 
 /* destination choose */
@@ -870,12 +869,11 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container .contact-content .separator {
     margin: auto 100px;
-    min-height: 127px; 
 }
 
 .container .contact-content .separator p {
@@ -1002,6 +1000,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 80%;
 }
 
@@ -1030,7 +1029,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     min-height: 72px;
     width: 80%;
     border: none;
-    padding-left: 29px;
+    padding-left: 1rem;
 }
 
 .subscribe-section .container .btn-subscribe input::-webkit-input-placeholder {
@@ -1161,11 +1160,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         min-height: 5rem;
     }
 
-    /* img {
-        max-width: 40%;
-        height: auto;
-    } */
-
     .container .info-content {
         margin: 34px auto;
         width: 100%;
@@ -1216,6 +1210,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         background-color: #9bddd8;
         z-index: 1;
         padding-top: 0px;
+        position: fixed;
     }
 
     .container .logo {
@@ -1253,7 +1248,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         background: #9bddd8;
         cursor: pointer;
         height: 100vh;
-        width: 100vh;
+        width: 100%;
         right: 0;
         position: fixed;
         top: 0;
@@ -1380,7 +1375,8 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         text-align: center;
     }
     .info-section .page-info h2,
-    .info-content .page-info h2 {
+    .info-content .page-info h2,
+    .planner-section .page-info h2 {
         font-size: 2rem;
     }
 
@@ -1412,16 +1408,19 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         display: flex;
         flex-direction: column;
     }
-    .major-gallery .btn-shadow {
+    .major-gallery .btn-shadow,
+    .minor-gallery .btn-shadow {
         position: relative;
         width: 100%;
     }
-    .major-gallery .btn-shadow a {
+    .major-gallery .btn-shadow a,
+    .minor-gallery .btn-shadow a {
         position: absolute;
         right: 0;
         bottom: 0;
     }
-    .major-gallery .page-info {
+    .major-gallery .page-info,
+    .minor-gallery .page-info {
         width: 100%;
         padding: 1rem;
         text-align: center;
@@ -1439,7 +1438,124 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     .minor-gallery {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .minor-gallery .main-graphic {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .minor-gallery .btn-shadow .palm-icon {
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right:0;
+        margin: auto;
+    }
+    .pagination {
         margin-bottom: 3rem;
+    }
+    /* planner-section */
+    .planner-section .container .page-info {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .planning-menu {
+        width: 100%;
+    }
+    .planning-menu .ittinery-box {
+        min-height: 660px;
+    }
+    .destination-status .destination-status-information .name,
+    .destination-status .destination-status-information .hours {
+        font-size: 1rem;
+    }
+    .btn-add-destination {
+        width: 60%;
+        margin-left: 35%;
+    }
+    .btn-add-destination p {
+        font-size: 0.7rem;
+    }
+    .added-destination {
+        width: 90%;
+    }
+    .added-destination p {
+        font-size: 0.7rem;
+    }
+    .btn-planning a {
+        padding: 1rem 1rem;
+        font-size: 0.54rem;
+        width: 40%;
+        height: 10%;
+    }
+    .destination-list {
+        width: 100%;
+    }
+    .destination-list-content .sort-list {
+        margin: auto 1rem;
+    }
+    .destination-list .destination-list-content {
+        width: 100%;
+    }
+    .destination-list-content .destination-choose {
+        width: 100%;
+    }
+    .destination-choose .destination-choose-info h4 {
+        font-size: 1rem;
+    }
+    .destination-choose .destination-choose-info p {
+        font-size: 0.7rem;
+    }
+    /* contact-section */
+    .contact-section .container {
+        padding-bottom: 1rem;
+    }
+    .contact-section .container h2 {
+        font-size: 3rem;
+        margin: 3rem auto;
+    }
+    .contact-form form .btn-email,
+    .contact-form form .btn-info {
+        min-height: 35px;
+    }
+    .contact-button .btn-message {
+        font-size: 0.9rem;
+        padding: 1rem 2rem;
+    }
+    .container .contact-content .separator {
+        margin: 2rem auto;
+    }
+    .contact-content .contact-info h3 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .contact-content .contact-info .contact-us a p {
+        font-size: 1rem;
+    }
+    .contact-content .contact-info .contact-us span {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    /* subscribe-section */
+    .subscribe-section .container h2 {
+        font-size: 2.2rem;
+    }
+    .subscribe-section .container p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0.5rem auto;
+    }
+    .subscribe-section .container .btn-subscribe {
+        width: 100%;
+    }
+    .subscribe-section .container .btn-subscribe input::-webkit-input-placeholder {
+        font-size: 0.8rem;
+    }
+    .footer-content .first-nav li:nth-child(2)::before,
+    .footer-content .first-nav li:nth-child(3)::before {
+        content: "";
     }
 }
