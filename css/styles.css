@@ -516,7 +516,6 @@ h2 span {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 /* Ittinery Box */
@@ -754,8 +753,9 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 .destination-list .destination-list-content .title::after {
     content: '';
     display: block;
-    border: 1px solid #29d9c2;
-    width: 15%;
+    background-color: #29d9c2;
+    height: 1px;
+    width: 50%;
     margin-top: 1rem;
 }
 
@@ -766,6 +766,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
+        width: 90%;
 }
 
 .destination-list-content .sort-list p {
@@ -870,17 +871,16 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 .contact-section .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    min-height: 667px;
+    min-height: 40rem;
     position: relative;
-    width: 90%;
 }
 
 .contact-section .container h2 {
     color: #ffffff;
-    font-family: "Chunk Five";
-    font-size: 67px; 
-    margin: 89px auto;
+    font-size: 67px;
+    margin: 5rem auto;
 }
 
 .contact-section .container .contact-content {
@@ -891,7 +891,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 }
 
 .container .contact-content .separator {
-    margin: auto 100px;
+    margin: auto 50px;
 }
 
 .container .contact-content .separator p {
@@ -1143,6 +1143,120 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 
 /* Media Queries*/
 
+@media (max-width: 1024px) {
+    /* major-gallery */
+    .minor-gallery .page-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-section .page-info p {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    /* planner-section */
+    .planner-section .container .page-info {
+        margin-bottom: 4rem;
+    }
+    .destination-list-content .sort-list {
+        margin-top: 0;
+    }
+    .destination-list .destination-list-content {
+        width: 300px;
+    }
+    .destination-choose .destination-choose-info h4 {
+        font-size: 1.2rem;
+    }
+
+    /* contact-section */
+    .contact-section {
+        background-size: cover;
+    }
+    .contact-section .container h2 {
+        margin: 3rem auto;
+    }
+    .contact-section .container .contact-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 3rem;
+    }
+    .container .contact-content .separator {
+        margin: 50px auto;
+    }
+
+    /* subscribe-section */
+    .subscribe-section .container .subscribe-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 900px) {
+    /*major-gallery */
+    .btn-shadow > img {
+        height: auto;
+    }
+    .major-gallery .page-info {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .major-gallery .page-info > img,
+    .minor-gallery .page-info > img {
+        transform: scale(0.7, 0.7);
+        -ms-transform: scale(0.7, 0.7);
+        -webkit-transform: scale(0.7, 0.7);
+    }
+    .gallery-section .page-info h3 {
+        margin-left: 32px;
+    }
+    .gallery-section .page-info p {
+        margin-top: 0;
+        font-size: 0.8rem;
+    }
+    .btn-shadow .mountain-pic,
+    .btn-shadow .canoe-pic {
+        height: max-content;
+    }
+    .layout-gallery-small {
+        width: 100%;
+        height: 60%;
+    }
+    .minor-gallery .page-info {
+        width: 100%;
+        padding: 0.9rem;
+    }
+    .minor-gallery .page-info h3 {
+        margin-top: 12px;
+    }
+
+    /* planning-section */
+    .btn-add-destination {
+        width: 50%;
+        margin-left: 47.5%;
+    }
+    .destination-list .destination-list-content {
+        width: 250px;
+        margin-left: 1rem;
+    }
+    .destination-choose .destination-choose-info p {
+        font-size: 12px;
+    }
+    .destination-choose .destination-choose-info {
+        margin: 6px 12px;
+    }
+    .destination-list .destination-choose-details {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
 @media (max-width: 768px) {
     /* general styles */
     p {
@@ -1231,17 +1345,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         width: 100%;
         margin: 20px auto;
     }
-
-    /* .container .major-gallery,
-    .container .minor-gallery {
-        background-size: 100% 100%;
-        width: 100%;
-        flex-wrap: wrap;
-    } */
-
-    /* .major-gallery .major-gallery-info {
-        background-size: 100% 100%;
-    } */
 
     .major-gallery .major-gallery-info .page-info,
     .minor-gallery .major-gallery-info .page-info {
