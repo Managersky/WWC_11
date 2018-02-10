@@ -1526,94 +1526,15 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     .planner-section .page-info h2 {
         font-size: 2rem;
     }
-
-    /* major-gallery */
-    /* .main-graphic .btn-shadow>a,
-    .main-graphic .page-info {
-        position: static;
-    }
-    .container .info-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem auto 1rem auto;
-        width: 100%;
-        text-align: center;
-    }
+    .container .info-content,
     .container .search-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 1rem auto;
-    }
-    .search-content .btn-search {
-        margin-bottom: 1rem;
-    }
-    .container .major-gallery {
-        width: 100%;
-        position: relative;
-    }
-    .major-gallery .main-graphic {
-        display: flex;
-        flex-direction: column;
-    }
-    .main-graphic .layout-gallery {
-        display: none;
-    }
-    .main-graphic .page-info>img {
-        transform: scale(0.7, 0.7);
-        -ms-transform: scale(0.7, 0.7);
-        -webkit-transform: scale(0.7, 0.7);
-    }
-    .major-gallery .btn-shadow,
-    .minor-gallery .btn-shadow {
-        position: relative;
-        width: 100%;
-    }
-    .major-gallery .btn-shadow a,
-    .minor-gallery .btn-shadow a {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    .major-gallery .page-info,
-    .minor-gallery .page-info {
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        background-image: none;
-        background-color: white;
+        text-align: center;
     }
-    .gallery-section .page-info h3 {
-        margin-top: 10%;
-        margin-left: 1rem;
-    } */
-    /* minor-gallery */
-    /* .minor-gallery {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 2rem;
+    .minor-gallery .page-info {
+        overflow: scroll;
     }
-    .minor-gallery .main-graphic {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-    .minor-gallery .btn-shadow .palm-icon {
-        position: absolute;
-        top: 0;
-        bottom:0;
-        left: 0;
-        right:0;
-        margin: auto;
-    }
-    .pagination {
-        margin-bottom: 3rem;
-    } */
+
     /* planner-section */
     .planner-section .container .page-info {
         margin-top: 3rem;
@@ -1630,8 +1551,8 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         font-size: 1rem;
     }
     .btn-add-destination {
-        width: 60%;
-        margin-left: 35%;
+        width: 40%;
+        margin-left: 55%;
     }
     .btn-add-destination p {
         font-size: 0.7rem;
