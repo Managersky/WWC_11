@@ -1519,8 +1519,38 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         justify-content: center;
         text-align: center;
     }
+
+    /* minor-gallery */
+    .search-content .btn-place .btn-gallery {
+        font-size: 13px;
+    }
     .minor-gallery .page-info {
         overflow: scroll;
+    }
+    .layout-gallery,
+    .layout-gallery-small {
+        display: none;
+    }
+    .btn-shadow {
+        margin-bottom: 0;
+    }
+    .btn-shadow a {
+        right: 10;
+    }
+    .major-gallery .page-info,
+    .minor-gallery .page-info {
+        position: relative;
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    .btn-shadow .mountain-pic,
+    .btn-shadow .canoe-pic {
+        height: auto;
+    }
+    .pagination {
+        margin-top: 2rem;
     }
 
     /* planner-section */
@@ -1539,8 +1569,12 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         font-size: 1rem;
     }
     .btn-add-destination {
-        width: 40%;
-        margin-left: 55%;
+        width: 55%;
+        margin-left: 40%;
+    }
+    .btn-add-destination a {
+        justify-content: flex-end;
+        margin-right: 0.5rem;
     }
     .btn-add-destination p {
         font-size: 0.7rem;
@@ -1555,7 +1589,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         padding: 1rem 1rem;
         font-size: 0.54rem;
         width: 40%;
-        height: 10%;
+        height: 5%;
     }
     .destination-list {
         width: 100%;
@@ -1564,7 +1598,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         margin: auto 1rem;
     }
     .destination-list .destination-list-content {
-        width: 100%;
+        width: 90%;
     }
     .destination-list-content .destination-choose {
         width: 100%;
@@ -1583,9 +1617,20 @@ input[type="text"].btn-title::-webkit-input-placeholder {
         font-size: 3rem;
         margin: 3rem auto;
     }
+    .contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-form form {
+        max-width: 90%;
+    }
     .contact-form form .btn-email,
     .contact-form form .btn-info {
         min-height: 35px;
+    }
+    .contact-button {
+        width: 90%;
     }
     .contact-button .btn-message {
         font-size: 0.9rem;
@@ -1596,22 +1641,17 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     }
     .contact-content .contact-info h3 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
-    .contact-content .contact-info .contact-us a p {
-        font-size: 1rem;
-    }
-    .contact-content .contact-info .contact-us span {
-        font-size: 1rem;
-        margin-top: 0;
-    }
+
     /* subscribe-section */
     .subscribe-section .container {
         padding: 2rem 0;
     }
     .subscribe-section .container h2 {
         font-size: 2.2rem;
+        text-align: center;
     }
     .subscribe-section .container p {
         font-size: 1rem;
@@ -1623,5 +1663,10 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     }
     .subscribe-section .container .btn-subscribe input::-webkit-input-placeholder {
         font-size: 0.8rem;
+    }
+
+    /* footer */
+    .footer-content .menu-items {
+        flex-direction: row;
     }
 }
