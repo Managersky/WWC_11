@@ -49,6 +49,7 @@ body {
 
 .container {
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -414,7 +415,6 @@ h2 span {
     right: 0;
     width: 50%;
     height: 100%;
-    object-fit: cover;
     opacity: 0.9;
 }
 
@@ -445,9 +445,11 @@ h2 span {
 
 .minor-gallery .page-info {
     position: absolute;
-    width: 60%;
-    z-index: 2;
-    padding: 1rem;
+    top: 0;
+    right: 40%;
+    padding: 2rem;
+    height: 100%;
+    overflow: scroll;
 }
 
 .layout-gallery-small {
@@ -457,7 +459,6 @@ h2 span {
     width: 60%;
     height: 100%;
     opacity: 0.9;
-    z-index: 1;
 }
 
 .minor-gallery .btn-shadow .palm-icon {
@@ -1207,12 +1208,9 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     }
     .major-gallery .page-info > img,
     .minor-gallery .page-info > img {
-        transform: scale(0.7, 0.7);
-        -ms-transform: scale(0.7, 0.7);
-        -webkit-transform: scale(0.7, 0.7);
-    }
-    .gallery-section .page-info h3 {
-        margin-left: 32px;
+        transform: scale(0.8, 0.7);
+        -ms-transform: scale(0.8, 0.7);
+        -webkit-transform: scale(0.8, 0.7);
     }
     .gallery-section .page-info p {
         margin-top: 0;
@@ -1222,12 +1220,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     .btn-shadow .canoe-pic {
         height: max-content;
     }
-    .layout-gallery-small {
-        width: 100%;
-        height: 60%;
-    }
     .minor-gallery .page-info {
-        width: 100%;
         padding: 0.9rem;
     }
     .minor-gallery .page-info h3 {
@@ -1314,15 +1307,10 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     .minor-gallery>.btn-shadow {
         width: 100%;
     }
-    .layout-gallery-small {
-        width: 50%;
-        height: max-content;
-    }
     .minor-gallery .page-info {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 50%;
     }
     .minor-gallery .page-info>img {
         transform: scale(1, 1);
