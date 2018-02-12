@@ -449,7 +449,6 @@ h2 span {
     right: 40%;
     padding: 2rem;
     height: 100%;
-    overflow: scroll;
 }
 
 .layout-gallery-small {
@@ -457,7 +456,7 @@ h2 span {
     top: 0;
     left: 0;
     width: 60%;
-    height: 100%;
+    height: max-content;
     opacity: 0.9;
 }
 
@@ -1669,4 +1668,10 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     .footer-content .menu-items {
         flex-direction: row;
     }
+}
+
+ @media screen and (orientation:landscape) {
+     .intro-section {
+         min-height: 90%;
+     }
 }
