@@ -852,6 +852,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     background-color: #ffffff;
     border-radius: 5px;
     margin-top: 17px;
+    cursor: move;
 }
 
 .destination-choose .destination-choose-info {
