@@ -7,11 +7,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>WWC-11</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css" media="all" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js" defer></script>
 	<script src="js/scrollTo.js" defer></script>
 	<script src="js/hamburgerMenu.js" defer></script>
+	<script src="js/printContent.js" defer></script>
 </head>
 
 <body>
@@ -217,9 +218,9 @@
 						</div>
 					</div>
 					<div class="btn-planning">
-						<a href="#" class="btn btn-save-as-pdf"><img src="images/book-of-wisdom.png" alt="book icon">Save as pdf</a>
-						<a href="javascript:window.print()" class="btn btn-print"><img src="images/printer.png" alt="printer icon">Print</a>
-					</div>	
+						<a href="#" class="btn btn-save-as-pdf" id="savePDF"><img src="images/book-of-wisdom.png" alt="book icon">Save as pdf</a>
+						<a href="#" class="btn btn-print" id="print"><img src="images/printer.png" alt="printer icon">Print</a>
+					</div>
 				</section>
 				<section class="destination-list">
 					<div class="destination-list-content">
