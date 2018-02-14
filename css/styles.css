@@ -407,7 +407,8 @@ h2 span {
     align-items: center;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 49%;
+    padding: 0 15px;
 }
 
 .btn-shadow p {
@@ -420,6 +421,12 @@ h2 span {
 .btn-shadow > img {
     width: 100%;
     height: max-content;
+}
+
+.see-more-btn:hover {
+     background: linear-gradient(to top, black, transparent);
+     border-radius: 100% 100% 1px 1px;
+     opacity: 0.7;
 }
 
 /* Gallery - picture description & layout */
@@ -455,7 +462,7 @@ h2 span {
 }
 
 .minor-gallery .btn-shadow a {
-    right: 1rem;
+    right: 0rem;
 }
 
 .minor-gallery .page-info {
@@ -464,6 +471,7 @@ h2 span {
     right: 40%;
     padding: 2rem;
     height: 100%;
+    overflow: scroll;
 }
 
 .layout-gallery-small {
@@ -1013,6 +1021,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: max-content;
 }
 
 .contact-content .contact-info .contact-us a p {
