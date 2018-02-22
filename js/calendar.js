@@ -16,7 +16,8 @@ function Calendar(input, options) {
         onDateSelect: function (day, month, year) {
             const monthText = ((month + 1) < 10) ? "0" + (month + 1) : month + 1;
             const dayText = (day < 10) ? "0" + day : day;
-            this.input.value = dayText + '-' + monthText + '-' + this.year;
+            this.input.value = dayText + '/' + monthText + '/' + this.year;
+            this.input.innerHTML = dayText + '/' + monthText + '/' + this.year;
         }.bind(this)
     }
     this.options = Object.assign({}, defaultOptions, options);
@@ -56,7 +57,7 @@ function Calendar(input, options) {
 
     //metoda wypisująca nazwę miesiąca i roku
     this.createDateText = function () {
-        const monthNames = ['styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'];
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         this.divDateText.innerHTML = monthNames[this.month] + ' ' + this.year;
     };
 
@@ -71,7 +72,7 @@ function Calendar(input, options) {
         //tworzymy nagłówki dni
         let tr = document.createElement('tr');
         tr.classList.add('calendar-table-days-names')
-        const days = ['Pon', 'Wto', 'Śro', 'Czw', 'Pią', 'Sob', 'Nie'];
+        const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
         for (let i = 0; i < days.length; i++) {
             const th = document.createElement('th');
             th.innerHTML = days[i];
@@ -214,6 +215,7 @@ function Calendar(input, options) {
     };
 };
 
+// Metoda z niezamykającym się kalendarzem
 // const btn1 = document.querySelector('.calendar-btn');
 // const cal1 = new Calendar(btn1, {});
 // cal1.init();
@@ -230,7 +232,8 @@ const cal1 = new Calendar(btn1, {
         const dayText = ((day + 1) < 10) ? "0" + (day + 1) : day + 1;
         const monthText = ((month + 1) < 10) ? "0" + (month + 1) : month + 1;
 
-        btn2.value = dayText + '.' + monthText + '.' + year;
+        btn1.value = dayText + '/' + monthText + '/' + year;
+        btn1.innerHTML = dayText + '/' + monthText + '/' + year;
     }
 });
 cal1.init();
@@ -244,6 +247,7 @@ const cal2 = new Calendar(btn2, {
         const monthText = ((month + 1) < 10) ? "0" + (month + 1) : month + 1;
 
         btn2.value = dayText + '/' + monthText + '/' + year;
+        btn2.innerHTML = dayText + '/' + monthText + '/' + year;
     }
 });
 cal2.init();

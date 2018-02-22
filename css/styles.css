@@ -471,7 +471,7 @@ h2 span {
     right: 40%;
     padding: 2rem;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .layout-gallery-small {
@@ -604,24 +604,20 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     font-size: 16px;
 }
 
-.ittinery-content .ittinery-timetable .date {
+.ittinery-content .ittinery-timetable .input-calendar {
     display: flex;
-    justify-content: center;
     align-items: center;
+
 }
 
-.ittinery-content .ittinery-timetable .date p {
-    margin-right: 10px;
-    font-family: "Lato - Heavy";
-}
-
-.ittinery-content .ittinery-timetable .date:after {
+.ittinery-content .ittinery-timetable .input-calendar:after {
     content: '';
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 6px 4px 0px 4px;
     border-color: #29d9c2 transparent transparent transparent;
+    margin-left: 5px;
 }
 
 /* Destination status */
@@ -1196,9 +1192,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 /* input kalendarza */
 
 .input-calendar {
-    background-position: 99% center;
-    background-repeat: no-repeat;
-    border: 1px solid #ddd;
     cursor: pointer;
 }
 
@@ -1207,14 +1200,14 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 .calendar {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 300px;
-    background: #fff;
+    background: #eee39e;
     min-height: 300px;
     padding: 5px;
     border: 1px solid #ddd;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
+    box-shadow: 2px 2px 1px rgba(255, 0, 0, 0.09);
+    font-family: "Lato - Semibold";
     display: none;
     z-index: 1;
 }
@@ -1237,22 +1230,23 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     z-index: 1;
     cursor: pointer;
     width: 30px;
-    font-family: sans-serif;
+    font-family: "Lato - Black";
     background-color: transparent;
     border: 0;
-    color: #333;
+    color: #7e722f;
 }
 
 .calendar .input-prev:hover,
 .calendar .input-next:hover {
-    background: #D1EBFD;
+    background: #bda938a1;
 }
 
 /* nazwa miesiąca i roku */
 
 .calendar .date-name {
     font-size: 12px;
-    color: #666;
+    font-family: "Lato - Black";
+    color: #aea25c;
     padding: 0 40px;
     text-align: center;
     line-height: 30px;
@@ -1280,7 +1274,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 
 .calendar .calendar-table {
     font-size: 12px;
-    color: #666;
+    color: #aea25c;
     width: 100%;
 }
 
@@ -1290,33 +1284,33 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 }
 
 .calendar .calendar-table th {
-    font-family: sans-serif;
+    font-family: "Lato - Semibold";
     font-weight: normal;
     padding-bottom: 10px;
     font-size: 11px;
-    color: #aaa;
+    color: #aea25c;
 }
 
 .calendar .calendar-table td.day {
-    background: #fafafa;
+    background: #ffffa6;
     height: 40px;
     font-size: 11px;
-    font-family: sans-serif;
+    font-family: "Lato - Semibold";
     font-weight: bold;
 }
 
 .calendar .calendar-table td.day:hover {
-    background: #D1EBFD;
+    background: #7ee0d3a4;
     cursor: pointer
 }
 
 .calendar .calendar-table td.current-day {
-    background-color: #F15C5C;
+    background-color: #29d9c2;
     color: #fff;
 }
 
 .calendar .calendar-table td.current-day:hover {
-    background-color: #DE5858;
+    background-color: #29d9c2;
 }
 
 /* Media Queries*/
