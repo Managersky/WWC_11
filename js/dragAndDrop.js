@@ -1,12 +1,15 @@
 startDrag = function(e) {
-    e.dataTransfer.dropEffect = "move";
     e.dataTransfer.setData("text", e.target.id);
-    e.target.style.opacity = "0.7";
-}
+    e.dataTransfer.dropEffect = "move";
+};
 
 allowDrop = function(e) {
     e.preventDefault();
-}
+    if (e.target.getAttribute("draggable") == "true")
+        e.dataTransfer.dropEffect = "none";
+    else
+        e.dataTransfer.dropEffect = "all";
+};
 
 dragDrop = function(e) {
     e.preventDefault();

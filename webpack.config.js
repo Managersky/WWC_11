@@ -4,7 +4,7 @@ module.exports = {
     entry: "./js/test-webpack-input.js",
     output: {
         path: `${__dirname}/js`,
-        filename: "js/test-webpack-output.js"
+        filename: "test-webpack-output.js"
     },
     watch: true,
     devtool: "source-map",
