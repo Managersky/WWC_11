@@ -16,8 +16,8 @@
 	<script src="js/dragAndDrop.js" defer></script>
 	<script src="js/calendar.js" defer></script>
 	<script src="js/accountScript.js" defer></script>
-	<script src="ittineryToDo.js" defer></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
+	<script src="js/ittineryToDo.js" defer></script>
 </head>
 
 <body>
@@ -196,8 +196,9 @@
 									<p class="hours">03.30 - 09.30</p>
 								</div>
 							</div>
+							<div class="sub-destination" id="todoList1"></div>
 							<div class="btn-add-destination" title="add sub destination">
-								<button type="submit" class="todo-add-btn">add sub destination</button>
+								<button type="submit" class="todo-add-btn" id="todoForm1">add sub destination</button>
 							</div>
 							<div class="destination-status">
 								<div class="destination-status-image">
@@ -208,13 +209,25 @@
 									<p class="hours">10.00 - 15.00</p>
 								</div>
 							</div>
-							<div class="added-destination">
-								<p>Enjoy Malang while Listening Music</p>
-								<button class="todo-element-delete" title="delete sub destination">
-									<i class="fas fa-times-circle"></i>
-								</button>
+							<div class="sub-destination" id="todoList2">
+								<div class="added-destination">
+									<div class="top-element-bar">
+										<p class="todo-element-text">Enjoy Malang while Listening Music</p>
+										<button class="todo-element-delete" title="delete sub destination">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</div>
+								<div class="added-destination">
+									<div class="top-element-bar">
+										<p class="todo-element-text">Gonna Eat BAKSO</p>
+										<button class="todo-element-delete" title="delete sub destination">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</div>
 							</div>
-							<div class="btn-add-destination" title="add sub destination">
+							<div class="btn-add-destination" id="todoForm2" title="add sub destination">
 								<button type="submit" class="todo-add-btn">add sub destination</button>
 							</div>
 							<div class="ittinery-timetable">
