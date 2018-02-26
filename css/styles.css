@@ -780,6 +780,13 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     padding-left: 1rem;
 }
 
+.added-destination-info {
+    color: #aea25c;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
 .top-element-bar {
     display: flex;
     justify-content: space-between;
@@ -790,7 +797,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 }
 
 .todo-element-delete {
-    color: #d8cb7d;
     border: 0;
     font-size: 1rem;
     background: none;

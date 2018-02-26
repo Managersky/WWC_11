@@ -4,6 +4,7 @@ let todoForm1 = null;
 let todoForm2 = null;
 
 function addDestination() {
+
     //element todo
     const todo = document.createElement('div');
     todo.classList.add('added-destination');
@@ -21,7 +22,7 @@ function addDestination() {
     //text element
     const todoText = document.createElement('p');
     todoText.classList.add('todo-element-text');
-    todoText.innerText = "Lorem Ipsum";
+    todoText.textContent = "Free beer on the top of the mountain";
 
     //merge all
     todoBar.appendChild(todoText);
@@ -29,6 +30,23 @@ function addDestination() {
     todo.appendChild(todoBar);
 
     todoList1.append(todo);
+
+    foo = todoList1.querySelectorAll(".top-element-bar");
+    replaceText(foo[0].firstChild, "Climbing with a guide");
+    if (foo[2].firstChild) {
+        replaceText(foo[1].firstChild, "Sheep gazing");
+    }
+}
+
+function addInformation() {
+    const todo = document.createElement('p');
+    todo.classList.add('added-destination-info');
+    todo.innerText = "That's all we have to offer. Thank you!";
+    todoList1.append(todo);
+}
+
+function replaceText(el, str) {
+    el.textContent ? el.textContent = str : el.innerText = str;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -36,21 +54,24 @@ document.addEventListener('DOMContentLoaded', function () {
     todoForm1 = document.getElementById('todoForm1');
     todoList2 = document.getElementById('todoList2');
     todoForm2 = document.getElementById('todoForm2');
-    console.log(todoForm1);
+
     todoForm1.addEventListener('click', function (e) {
         e.preventDefault();
-        // const textarea = this.querySelector('textarea');
-        // if (textarea.value !== '') {
-        //     addDestination(textarea.value);
-        //     textarea.value = '';
-        // }
-        console.log("klik");
-        addDestination();
+        if (todoList1.childElementCount < 3) {
+            addDestination();
+        } else  {
+            todoForm1.parentNode.style.visibility = 'hidden';
+            addInformation();
+        }
     });
 
     todoList1.addEventListener('click', function (e) {
         if (e.target.closest('.todo-element-delete') !== null) {
-            e.target.closest('.todo-element').remove();
+            e.target.closest('.added-destination').remove();
+            if (todoForm1.parentNode.style.visibility === 'hidden') {
+                todoList1.lastElementChild.remove();
+            }
+            todoForm1.parentNode.style.visibility = 'visible';
         }
     });
 
