@@ -175,6 +175,34 @@ h2 span {
     margin-left: 3px;
 }
 
+.page-header .menu-items .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 35px;
+    z-index: 1;
+}
+
+.page-header .menu-items .show {
+    display: block;
+}
+
+/* Links inside the dropdown */
+
+.page-header .menu-items .dropdown a {
+    color:#01a2a6;
+    padding: 12px 16px;
+    display: block;
+}
+
+.page-header .menu-items .dropdown a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
 /* Main content*/
 
 /* Intro section */
