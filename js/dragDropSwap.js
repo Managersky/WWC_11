@@ -31,7 +31,7 @@ $(function () {
 
     // Let the list be droppable as well, accepting items from the box
     $destinationItems.droppable({
-        accept: "#drop-zone .destination-choose",
+        accept: "#drop-zone > .destination-choose",
         drop: function (event, ui)
         {
             backItem(ui.draggable);
@@ -47,7 +47,9 @@ $(function () {
 
             $item.appendTo($list).fadeIn(function () {
                 $item
-                    // .animate({ width: '370px' });
+                    .animate({ width: '370px' })
+                    .find("p").hide()
+                    $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
 
             });
         });
@@ -74,8 +76,10 @@ $(function () {
         $item.fadeOut(function () {
             $item
                 .appendTo($destinationItems)
-                .fadeIn();
+                .fadeIn()
+                .find("p").show();
                 $('.drag-destination').toggleClass('withItem');
+
         });
 
     }

@@ -852,7 +852,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     content: "";
 }
 
-.ui-droppable-active {
+.drag-destination.ui-droppable-active {
     transform: scaleY(1.2);
 }
 
@@ -1009,11 +1009,23 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 .drag-destination .destination-choose {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
     height: 70px;
-    border: 1px solid #d5d57d;
+    border: none;
     background-color: #ffffff;
-    border-radius: 5px;
     cursor: move;
+}
+
+.drag-destination .destination-choose .destination-choose-info h4 {
+    color: #626262;
+    font-size: 24px;
+    text-align: left;
+    margin-left: -20px;
+}
+
+.drag-destination .destination-choose .destination-choose-details {
+    width: 15%;
 }
 
 .destination-choose .destination-choose-info {
