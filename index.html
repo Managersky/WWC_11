@@ -7,17 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>WWC-11</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css" media="all" >
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js" defer></script>
-	<script src="js/scrollTo.js" defer></script> -->
-	<script src="js/hamburgerMenu.js" defer></script>
-	<script src="js/printContent.js" defer></script>
-	<script src="js/dragAndDrop.js" defer></script>
-	<script src="js/calendar.js" defer></script>
-	<script src="js/accountScript.js" defer></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
-	<script src="js/ittineryToDo.js" defer></script>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -41,11 +31,14 @@
 						<li><a href="#" id="itemIttinary">Ittinary</a></li>
 						<li><a href="#" id="itemReview">Review</a></li>
 						<li><a href="#" id="itemContact">Contact</a></li>
-						<li class="account-btn"><a href="#" class="user-account"></a><div id="headerDropdown" class="dropdown">
-							<a href="#">Example Link 1</a>
-							<a href="#">Example Link 2</a>
-							<a href="#">Example Link 3</a>
-						</div></li>
+						<li class="account-btn">
+							<a href="#" class="user-account"></a>
+							<div id="headerDropdown" class="dropdown">
+								<a href="#">Example Link 1</a>
+								<a href="#">Example Link 2</a>
+								<a href="#">Example Link 3</a>
+							</div>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -227,8 +220,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="btn-add-destination" id="todoForm2" title="add sub destination">
-								<button type="submit" class="todo-add-btn">add sub destination</button>
+							<div class="btn-add-destination" title="add sub destination">
+								<button type="submit" class="todo-add-btn" id="todoForm2">add sub destination</button>
 							</div>
 							<div class="ittinery-timetable">
 								<p>Day 2</p>
@@ -243,9 +236,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="drag-destination" id="drop-zone">
-								<p>Drag Destination Here</p>
-							</div>
+							<div class="drag-destination" id="drop-zone"></div>
 						</div>
 					</div>
 					<div class="btn-planning">
@@ -265,8 +256,8 @@
 							</div>
 							<a href="#" class="search-destination"></a>
 						</div>
-
-						<div class="destination-choose" draggable="true">
+						<div id="destination-choose-list">
+							<div class="destination-choose" draggable="true">
 							<div class="destination-choose-info">
 								<h4>Mt. Bromo</h4>
 								<p>estimated time: <span class="bold-font">5 </span><span>Hours</span></p>
@@ -341,6 +332,7 @@
 									<p>view details</p>
 								</a>
 							</div>
+						</div>
 						</div>
 
 					</div>
@@ -434,5 +426,20 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js" defer></script>
+	<script src="js/scrollTo.js" defer></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/hamburgerMenu.js" defer></script>
+	<script src="js/printContent.js" defer></script>
+	<!-- <script src="js/dragAndDrop.js" defer></script> -->
+	<script src="js/dragDropSwap.js" defer></script>
+	<script src="js/calendar.js" defer></script>
+	<script src="js/accountScript.js" defer></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
+	<script src="js/ittineryToDo.js" defer></script>
+
 </body>
 </html>

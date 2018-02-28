@@ -2,7 +2,7 @@ jQuery(function ($) {
 				//reset scroll
 				$.scrollTo(0);
 				//scroll To - header menu
-				$('#itemHome').click(function () { $.scrollTo($('.body'), 500); });
+				$('#itemHome').click(function () { $.scrollTo($('.page-header'), 500); });
 				$('#itemDestination').click(function () { $.scrollTo($('.gallery-section'), 500); });
 				$('#itemIttinary').click(function () { $.scrollTo($('.planner-section'), 500); });
 				$('#itemReview').click(function () { $.scrollTo($('.contact-section'), 500); });
@@ -10,7 +10,7 @@ jQuery(function ($) {
 				//scroll to - CTA button
 				$('#cta-btn').click(function () { $.scrollTo($('.planner-section'), 500); });
 				//scroll to - Top
-				$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+				$('.scrollup').click(function() { $.scrollTo($('.page-header'), 1000); });
 			}
 );
 
