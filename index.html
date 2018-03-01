@@ -250,18 +250,19 @@
 						<div class="sort-list">
 							<div class="sort-list-content">
 								<p>sort by : </p>
-								<div class="sort-by">All
-										<div class="dropdown">
-											<a href="#" data-category="all">All</a>
-											<a href="#" data-category="mountain">Mountain</a>
-											<a href="#" data-category="city">City</a>
-										</div>
+								<div class="sort-by">
+									<p class="destination-name">All</p>
+									<div class="dropdown">
+										<a href="#" data-category="all" class="sort-destination">All</a>
+										<a href="#" data-category="mountain" class="sort-destination">Mountain</a>
+										<a href="#" data-category="city" class="sort-destination">City</a>
+									</div>
 								</div>
 							</div>
 							<a href="#" class="search-destination"></a>
 						</div>
 						<div id="destination-choose-list">
-							<div class="destination-choose" draggable="true">
+							<div class="destination-choose" draggable="true" data-category="mountain">
 							<div class="destination-choose-info">
 								<h4>Mt. Kawi</h4>
 								<p>estimated time: <span class="bold-font">5 </span><span>Hours</span></p>
@@ -274,7 +275,7 @@
 							</div>
 						</div>
 
-						<div class="destination-choose" draggable="true">
+						<div class="destination-choose" draggable="true" data-category="mountain">
 							<div class="destination-choose-info">
 								<h4>Mt. Panderman</h4>
 								<p>estimated time:
@@ -290,7 +291,7 @@
 							</div>
 						</div>
 
-						<div class="destination-choose" draggable="true">
+						<div class="destination-choose" draggable="true" data-category="mountain">
 							<div class="destination-choose-info">
 								<h4>Mt. Semeru</h4>
 								<p>estimated time:
@@ -306,7 +307,7 @@
 							</div>
 						</div>
 
-						<div class="destination-choose" draggable="true">
+						<div class="destination-choose" draggable="true" data-category="city">
 							<div class="destination-choose-info">
 								<h4>Lawang City</h4>
 								<p>estimated time:
@@ -322,7 +323,7 @@
 							</div>
 						</div>
 
-						<div class="destination-choose" draggable="true">
+						<div class="destination-choose" draggable="true" data-category="city">
 							<div class="destination-choose-info">
 								<h4>Malang City</h4>
 								<p>estimated time:
@@ -444,6 +445,7 @@
 	<script src="js/dropdownMenu.js" defer></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
 	<script src="js/ittineryToDo.js" defer></script>
+	<script src="js/sortDestination.js" defer></script>
 
 </body>
 </html>
