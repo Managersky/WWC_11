@@ -25,6 +25,7 @@ $(function () {
             } else //if box is fill then swap item
             {
                 $(ui.draggable).swapWith($dropZone[0].firstChild);
+
             }
         }
     });
@@ -68,7 +69,11 @@ $(function () {
         $that.before($this);
         $temp.after($that).remove();
 
-        return $this;
+        return $this.animate({
+                width: '370px'
+            })
+            .find("p").hide()
+        $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
     }
 
     // Back item to list function
@@ -79,6 +84,8 @@ $(function () {
                 .fadeIn()
                 .find("p").show();
                 $('.drag-destination').toggleClass('withItem');
+                $item[0].firstChild.remove();
+                $item.css({"width": "auto"})
 
         });
 
