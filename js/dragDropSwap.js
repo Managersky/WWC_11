@@ -42,18 +42,14 @@ $(function () {
 
     // Add item function
     function addItem($item) {
-        $item.fadeOut(function ()
-        {
+
             const $list = $("div", $dropZone).length ? $("div", $dropZone) : $($item).appendTo($dropZone);
-
-            $item.appendTo($list).fadeIn(function () {
-                $item
-                    .animate({ width: '370px' })
-                    .find("p").hide()
-                    $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
-
-            });
-        });
+            $item
+                .appendTo($list)
+                .animate({ width: '370px' })
+                .fadeIn()
+                .find("p").hide()
+                $($item).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
     }
 
     // Swap item function
@@ -69,11 +65,17 @@ $(function () {
         $that.before($this);
         $temp.after($that).remove();
 
-        return $this.animate({
-                width: '370px'
-            })
-            .find("p").hide()
-        $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
+        $this
+            .animate({ width: '370px' })
+                    .find("p").hide()
+                    $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
+        $that
+            .appendTo($destinationItems)
+                .fadeIn()
+                .find("p").show();
+                $that[0].firstChild.remove();
+                $that.css({"width": "auto"})
+        return $this;
     }
 
     // Back item to list function

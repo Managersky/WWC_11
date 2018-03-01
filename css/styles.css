@@ -991,7 +991,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
 /* destination choose */
 
 #destination-choose-list {
-    height: 800px;
+    height: 440px;
 }
 
 .destination-list-content .destination-choose {
