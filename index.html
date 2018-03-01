@@ -33,10 +33,10 @@
 						<li><a href="#" id="itemContact">Contact</a></li>
 						<li class="account-btn">
 							<a href="#" class="user-account"></a>
-							<div id="headerDropdown" class="dropdown">
-								<a href="#">Example Link 1</a>
-								<a href="#">Example Link 2</a>
-								<a href="#">Example Link 3</a>
+							<div class="dropdown">
+								<a href="#">My ittinary</a>
+								<a href="#">Settings</a>
+								<a href="#">Logout</a>
 							</div>
 						</li>
 					</ul>
@@ -250,16 +250,20 @@
 						<div class="sort-list">
 							<div class="sort-list-content">
 								<p>sort by : </p>
-								<a class="sort-by" href="#">
-									<p>Mountain</p>
-								</a>
+								<div class="sort-by">All
+										<div class="dropdown">
+											<a href="#" data-category="all">All</a>
+											<a href="#" data-category="mountain">Mountain</a>
+											<a href="#" data-category="city">City</a>
+										</div>
+								</div>
 							</div>
 							<a href="#" class="search-destination"></a>
 						</div>
 						<div id="destination-choose-list">
 							<div class="destination-choose" draggable="true">
 							<div class="destination-choose-info">
-								<h4>Mt. Arjuna</h4>
+								<h4>Mt. Kawi</h4>
 								<p>estimated time: <span class="bold-font">5 </span><span>Hours</span></p>
 							</div>
 							<div class="destination-choose-details">
@@ -304,7 +308,7 @@
 
 						<div class="destination-choose" draggable="true">
 							<div class="destination-choose-info">
-								<h4>Mt. Kawi</h4>
+								<h4>Lawang City</h4>
 								<p>estimated time:
 									<span class="bold-font">5 </span>
 									<span>Hours</span>
@@ -312,7 +316,7 @@
 							</div>
 							<div class="destination-choose-details">
 								<a href="#">
-									<img src="images/mountains-icon.png">
+									<img class="city" src="images/carousel-icon.png">
 									<p>view details</p>
 								</a>
 							</div>
@@ -320,7 +324,7 @@
 
 						<div class="destination-choose" draggable="true">
 							<div class="destination-choose-info">
-								<h4>Mt. Arjuno</h4>
+								<h4>Malang City</h4>
 								<p>estimated time:
 									<span class="bold-font">5 </span>
 									<span>Hours</span>
@@ -328,7 +332,7 @@
 							</div>
 							<div class="destination-choose-details">
 								<a href="#">
-									<img src="images/mountains-icon.png">
+									<img class="city"src="images/carousel-icon.png">
 									<p>view details</p>
 								</a>
 							</div>
@@ -437,7 +441,7 @@
 	<!-- <script src="js/dragAndDrop.js" defer></script> -->
 	<script src="js/dragDropSwap.js" defer></script>
 	<script src="js/calendar.js" defer></script>
-	<script src="js/accountScript.js" defer></script>
+	<script src="js/dropdownMenu.js" defer></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
 	<script src="js/ittineryToDo.js" defer></script>
 

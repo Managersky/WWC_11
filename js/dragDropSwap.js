@@ -48,8 +48,9 @@ $(function () {
                 .appendTo($list)
                 .animate({ width: '370px' })
                 .fadeIn()
-                .find("p").hide()
-                $($item).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
+                .find("p").hide();
+                $item.find("img.city").css({"position":"static"});
+                $item.prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
     }
 
     // Swap item function
@@ -69,12 +70,14 @@ $(function () {
             .animate({ width: '370px' })
                     .find("p").hide()
                     $(this).prepend(`<p style="color: #a8a8a8">05.30 - 11.30</p>`);
+                    $(this).find("img.city").css({"position":"static"});
         $that
             .appendTo($destinationItems)
                 .fadeIn()
                 .find("p").show();
                 $that[0].firstChild.remove();
-                $that.css({"width": "auto"})
+                $that.css({"width": "auto"});
+                $that.find("img.city").css({"position":"absolute"});
         return $this;
     }
 
@@ -87,7 +90,8 @@ $(function () {
                 .find("p").show();
                 $('.drag-destination').toggleClass('withItem');
                 $item[0].firstChild.remove();
-                $item.css({"width": "auto"})
+                $item.css({"width": "auto"});
+                $item.find("img.city").css({"position":"absolute"});
 
         });
 
