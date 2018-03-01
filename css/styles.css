@@ -1006,11 +1006,33 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     position: relative;
 }
 
-.sort-list .search-destination {
+
+label.search-destination {
     background-image: url("../images/magnifier-icon.png");
     background-repeat: no-repeat;
     width: 14px;
     height: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+input#search {
+    position: absolute;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8e8e8;
+    height: 34px;
+    margin-right: -2.25rem;
+    transition: .25s;
+    outline: 0;
+    opacity: 0;
+    width: 0;
+    right: 60px;
+    top: -10px;
+}
+
+input#search:focus {
+    opacity: 1;
+    width: 8rem;
 }
 
 /* destination choose */
@@ -1563,6 +1585,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     }
     .destination-list-content .sort-list {
         margin-top: 0;
+        /* flex-direction: column; */
     }
     .destination-list .destination-list-content {
         width: 300px;
