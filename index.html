@@ -162,7 +162,7 @@
 				</div>
 				<div class="planner-section-content">
 				<section class="planning-menu">
-					<div class="ittinery-box">
+					<div class="ittinery-box" id="content-to-print">
 						<div class="ittinery-title">
 							<input class="btn-title" type="text" placeholder="Your Ittinery Title Here" name="Ittinery-title" />
 						</div>
@@ -170,7 +170,7 @@
 							<div class="ittinery-timetable">
 								<p>Day 1</p>
 								<div class="input-calendar-cnt">
-									<p class="calendar-btn input-calendar">05/29/2015</p>
+									<p class="calendar-btn input-calendar">Pick date</p>
 									<div class="calendar">
 										<div class="calendar-header">
 											<div class="calendar-prev-next"></div>
@@ -226,7 +226,7 @@
 							<div class="ittinery-timetable">
 								<p>Day 2</p>
 								<div class="input-calendar-cnt">
-									<p class="calendar-btn2 input-calendar">05/29/2015</p>
+									<p class="calendar-btn2 input-calendar">Pick date</p>
 									<div class="calendar">
 										<div class="calendar-header">
 											<div class="calendar-prev-next"></div>
@@ -240,8 +240,8 @@
 						</div>
 					</div>
 					<div class="btn-planning">
-						<a href="#" class="btn btn-save-as-pdf" id="savePDF"><img src="images/book-of-wisdom.png" alt="book icon">Save as pdf</a>
-						<a href="#" class="btn btn-print" id="print"><img src="images/printer.png" alt="printer icon">Print</a>
+						<a class="btn btn-save-as-pdf" id="savePDF"><img src="images/book-of-wisdom.png" alt="book icon">Save as pdf</a>
+						<a class="btn btn-print" id="print"><img src="images/printer.png" alt="printer icon">Print</a>
 					</div>
 				</section>
 				<section class="destination-list">
@@ -260,7 +260,7 @@
 								</div>
 							</div>
 						<label for="search" class="search-destination">
-							<input id="search" type="search">
+							<input id="search" type="search" placeholder="search">
 						</label>
 
 						</div>
@@ -435,14 +435,14 @@
 		</footer>
 	</div>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js" defer></script>
-	<script src="js/scrollTo.js" defer></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js" defer></script>
+	<script src="js/scrollTo.js" defer></script>
 	<script src="js/hamburgerMenu.js" defer></script>
 	<script src="js/printContent.js" defer></script>
-	<!-- <script src="js/dragAndDrop.js" defer></script> -->
 	<script src="js/dragDropSwap.js" defer></script>
 	<script src="js/calendar.js" defer></script>
 	<script src="js/dropdownMenu.js" defer></script>
