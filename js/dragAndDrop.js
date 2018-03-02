@@ -1,3 +1,5 @@
+// First time with drag and drop 
+
 startDrag = function(e) {
     e.dataTransfer.setData("text", e.target.id);
     e.dataTransfer.dropEffect = "move";

@@ -1203,7 +1203,8 @@ input#search:focus {
 }
 
 .contact-form form input::-webkit-input-placeholder,
-.contact-form form textarea::-webkit-input-placeholder {
+.contact-form form textarea::-webkit-input-placeholder,
+input#search::-webkit-input-placeholder {
     color: #b9b9b9;
     font-family: "Lato - Medium Italic";
     font-size: 14px;
