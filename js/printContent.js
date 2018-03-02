@@ -16,26 +16,31 @@
 // Script based on jsPDF plugin / html2canvas
 
 
+$(function () {
+    var pdf = new jsPDF();
 
-    var pdf = new jsPDF('p', 'pt', 'letter');
-    // source can be HTML-formatted string, or a reference
-    // to an actual DOM element from which the text will be scraped.
-    source = $('content-to-print')[0];
-
-    // we support special element handlers. Register them with jQuery-style
-    // ID selector for either ID or node name. ("#iAmID", "div", "span" etc.)
-    // There is no support for any other type of selectors
-    // (class, of compound) at this time.
-    specialElementHandlers = {
-        // element with id of "bypass" - jQuery style selector
-        '.calendar': function (element, renderer) {
-            // true = "handled elsewhere, bypass text extraction"
+    var specialElementHandlers = {
+        // this element is bypass
+        '#test': function (element, renderer) {
             return true;
         }
     };
 
-$('#print').click(function () {
-pdf.addHTML($('#content-to-print')[0], function () {
-    pdf.save('My-ittinery.pdf');
-});
+    //margins
+    left = 5,
+
+    $('#savePDF').click(function () {
+        pdf.internal.scaleFactor = 3.75; //scale content to print
+        pdf.addHTML($('#content-to-print')[0], left, 5, {
+                    pagesplit: true,
+                },
+                function () {
+                    pdf.save('My-ittinery.pdf');
+                });
+    });
+
+    $('#print').click(function () {
+        $("#content-to-print").printMe({ "path": ["../css/styles.css"] });
+    });
+
 });

@@ -33,7 +33,7 @@ function addDestination() {
 
     foo = todoList1.querySelectorAll(".top-element-bar");
     replaceText(foo[0].firstChild, "Climbing with a guide");
-    console.log(foo.length);
+
     if (foo.length === 3) {
         replaceText(foo[1].firstChild, "Sheep gazing");
     }

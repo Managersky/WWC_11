@@ -663,7 +663,7 @@ h2 span {
     flex-direction: column;
 }
 
-.planning-menu .ittinery-box {
+.ittinery-box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -679,7 +679,7 @@ h2 span {
 
 /* Ittinery box title */
 
-.planning-menu .ittinery-box .ittinery-title {
+.ittinery-box .ittinery-title {
     background-image: url("../images/ittinery-background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;

@@ -5,8 +5,13 @@ Weekly WebDev Challenge - Task 11
 
 - practice PSD --> HTML/CSS
 - practice RWD, Flexbox, JS scripts
-- first script i JQuery
-- first time with webpack
+- first JQuery scripts
+
+## Problems:
+
+- Save as PDF works but when the calendar is open, it will save pdf with it's view
+- Print works without CSS style
+
 
 ## Live:
 https://managersky.github.io/WWC_11/
