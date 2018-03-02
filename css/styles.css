@@ -1196,10 +1196,16 @@ input#search:focus {
 
 .contact-form form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     max-width: 469px;
+}
+
+.contact-form form .form-middle-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-form form input::-webkit-input-placeholder,
@@ -1237,15 +1243,7 @@ input#search::-webkit-input-placeholder {
     padding: 23px;
 }
 
-.contact-button {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.contact-button .btn-message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-form form .btn-message {
     background-color: #c3f37f;
     opacity: 0.9;
     color: #ffffff;
@@ -1253,8 +1251,9 @@ input#search::-webkit-input-placeholder {
     font-size: 15px;
     text-transform: uppercase;
     padding: 27px 25px;
-    max-height: 67px;
+    min-height: 67px;
     margin-top: 27px;
+    border-radius: 50px;
 }
 
 /* Contact Information */
@@ -1335,7 +1334,7 @@ input#search::-webkit-input-placeholder {
     background-color: #ffffff;
 }
 
-.subscribe-section .container .btn-subscribe input {
+.subscribe-section .container .btn-subscribe .subscribe-email {
     min-height: 72px;
     width: 80%;
     border: none;
@@ -1350,13 +1349,15 @@ input#search::-webkit-input-placeholder {
     line-height: 35px;
 }
 
-.subscribe-section .container .btn-subscribe a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.subscribe-section .container .btn-subscribe-arrow {
+    background-image: url("../images/arrow-subscribe.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #01a2a6;
     min-height: 72px;
     width: 20%;
+    border: none;
+    cursor: pointer;
 }
 
 /* Footer */

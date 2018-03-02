@@ -9,10 +9,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
 
 <body>
@@ -359,15 +355,15 @@
 				<h2>Contact</h2>
 				<div class="contact-content">
 					<div class="contact-form">
-						<form action="#">
-							<input class="btn-email" type="text" placeholder="Your Email" name="your-email" />
-							<input class="btn-info" type="text" placeholder="Company" name="company" />
-							<input class="btn-info" type="text" placeholder="Subject" name="subject" />
-							<textarea placeholder="Your Messages"></textarea>
+						<form method="post" action="#">
+							<input class="btn-email" type="email" placeholder="Your Email" name="your-email" required/>
+							<div class="form-middle-content">
+								<input class="btn-info" type="text" placeholder="Company" name="company" required/>
+								<input class="btn-info" type="text" placeholder="Subject" name="subject" required/>
+							</div>
+							<textarea placeholder="Your Messages" required></textarea>
+							<input type="submit" class="btn btn-message" value="Send message" />
 						</form>
-						<div class="contact-button">
-							<a href="#" class="btn btn-message">Send message</a>
-						</div>
 					</div>
 					<div class="separator">
 						<p>or</p>
@@ -403,14 +399,14 @@
 		<section class="subscribe-section">
 			<div class="container">
 				<div class="subscribe-content">
-				<div class="page-info">
-					<h2>Keep in Touch</h2>
-					<p>We Will Give you latest information about Malang</p>
-				</div>
-				<div class="btn-subscribe">
-					<input type="text" placeholder="Type Email Here for Subscribe" name="your email">
-					<a href="#"><img src="images/arrow-subscribe.png" alt="arrow icon"></a>
-				</div>
+					<div class="page-info">
+						<h2>Keep in Touch</h2>
+						<p>We Will Give you latest information about Malang</p>
+					</div>
+					<form action="#" class="btn-subscribe">
+						<input type="email" placeholder="Type Email Here for Subscribe" class="subscribe-email" name="your email" required>
+						<input type="submit" class="btn-subscribe-arrow" value=""/>
+					</form>
 				</div>
 			</div>
 		</section>
@@ -441,6 +437,10 @@
 	</div>
 
 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 	<!-- Hamburger menu -->
 	<script src="js/hamburgerMenu.js" defer></script>
@@ -457,6 +457,8 @@
 	<!-- Print and save as PDF -->
 	<script src="js/jquery-printme.min.js" defer></script>
 	<script src="js/printContent.js" defer></script>
+	<!-- Validate Forms -->
+	<script src="js/validateForm.js" defer></script>
 
 </body>
 </html>
