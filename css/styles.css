@@ -2106,3 +2106,73 @@ input#search::-webkit-input-placeholder {
          min-height: 90%;
      }
 }
+
+/* Tips for users */
+
+.form {
+    position: relative;
+}
+
+.form .error {
+    color: rgb(219, 8, 62);
+}
+
+.form .error input[type=text],
+.form .error input[type="email"] {
+    color: rgb(219, 8, 62);
+    background: rgb(255, 237, 237);
+    background-position: calc(100% - 5px) center;
+}
+
+.form .error textarea {
+    background-position: calc(100% - 5px) 10px;
+    background: rgb(255, 237, 237)
+}
+
+/* field for validation */
+
+.form .field-error {
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(219, 8, 62);
+    top: 95%;
+}
+
+.form .field_textarea .field-error {
+    top: 102%;
+    left: 6%;
+}
+
+/* add loading animation to btn with this class */
+
+.submit-busy {
+    position: relative;
+    /* pointer-events specifies under what circumstances (if any) a particular graphic element can become the target of mouse events. */
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.submit-busy::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotateSingleLoading 0.3s infinite linear;
+}
+
+/* Loading animation */
+
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

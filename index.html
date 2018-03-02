@@ -355,13 +355,13 @@
 				<h2>Contact</h2>
 				<div class="contact-content">
 					<div class="contact-form">
-						<form method="post" action="#">
-							<input class="btn-email" type="email" placeholder="Your Email" name="your-email" required/>
+						<form class="form" method="post" action="#">
+							<input class="btn-email" type="email" placeholder="Your Email" name="your-email" data-error="Email should have @" required/>
 							<div class="form-middle-content">
-								<input class="btn-info" type="text" placeholder="Company" name="company" required/>
-								<input class="btn-info" type="text" placeholder="Subject" name="subject" required/>
+								<input class="btn-info" type="text" placeholder="Company" name="company" data-error="incorrect comapny name" required/>
+								<input class="btn-info" type="text" placeholder="Subject" name="subject" data-error="incorrect subject name"required/>
 							</div>
-							<textarea placeholder="Your Messages" required></textarea>
+							<textarea placeholder="Your Messages" data-error="fill this area"required></textarea>
 							<input type="submit" class="btn btn-message" value="Send message" />
 						</form>
 					</div>
@@ -403,9 +403,9 @@
 						<h2>Keep in Touch</h2>
 						<p>We Will Give you latest information about Malang</p>
 					</div>
-					<form action="#" class="btn-subscribe">
-						<input type="email" placeholder="Type Email Here for Subscribe" class="subscribe-email" name="your email" required>
-						<input type="submit" class="btn-subscribe-arrow" value=""/>
+					<form action="#" class="form btn-subscribe">
+							<input type="email" placeholder="Type Email Here for Subscribe" class="subscribe-email" name="your email" data-error="Email should have @" required>
+							<input type="submit" class="btn-subscribe-arrow" value=""/>
 					</form>
 				</div>
 			</div>
