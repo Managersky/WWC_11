@@ -3,8 +3,9 @@ let todoList2 = null;
 let todoForm1 = null;
 let todoForm2 = null;
 
-function addDestination() {
+function addDestination(todoList, todoForm) {
 
+    this.init = function () {
     //element todo
     const todo = document.createElement('div');
     todo.classList.add('added-destination');
@@ -29,25 +30,40 @@ function addDestination() {
     todoBar.appendChild(todoDelete);
     todo.appendChild(todoBar);
 
-    todoList1.append(todo);
+    todoList.append(todo);
 
-    foo = todoList1.querySelectorAll(".top-element-bar");
-    replaceText(foo[0].firstChild, "Climbing with a guide");
+    //text for form list 1
+    subDestination1 = todoList1.querySelectorAll(".top-element-bar");
+    replaceText(subDestination1[0].firstChild, "Climbing with a guide");
 
-    if (foo.length === 3) {
-        replaceText(foo[1].firstChild, "Sheep gazing");
+    if (subDestination1.length === 3) {
+        replaceText(subDestination1[1].firstChild, "Sheep gazing");
     }
-}
 
-function addInformation() {
-    const todo = document.createElement('p');
-    todo.classList.add('added-destination-info');
-    todo.innerText = "That's all we have to offer. Thank you!";
-    todoList1.append(todo);
-}
+    };
 
-function replaceText(el, str) {
-    el.textContent ? el.textContent = str : el.innerText = str;
+    this.removeElement = function () {
+    todoList.addEventListener('click', function (e) {
+        if (e.target.closest('.todo-element-delete') !== null) {
+            e.target.closest('.added-destination').remove();
+            if (todoForm.parentNode.style.visibility === 'hidden') {
+                todoList.lastElementChild.remove();
+            }
+            todoForm.parentNode.style.visibility = 'visible';
+        }
+    });
+    };
+
+    this.addInformation = function () {
+        const todo = document.createElement('p');
+        todo.classList.add('added-destination-info');
+        todo.innerText = "That's all we have to offer. Thank you!";
+        todoList.append(todo);
+    };
+
+    function replaceText(el, str) {
+        el.textContent ? el.textContent = str : el.innerText = str;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -56,24 +72,27 @@ document.addEventListener('DOMContentLoaded', function () {
     todoList2 = document.getElementById('todoList2');
     todoForm2 = document.getElementById('todoForm2');
 
+    const destination1 = new addDestination(todoList1, todoForm1);
     todoForm1.addEventListener('click', function (e) {
         e.preventDefault();
         if (todoList1.childElementCount < 3) {
-            addDestination();
+            destination1.init();
         } else  {
             todoForm1.parentNode.style.visibility = 'hidden';
-            addInformation();
+            destination1.addInformation();
         }
     });
+    destination1.removeElement();
 
-    todoList1.addEventListener('click', function (e) {
-        if (e.target.closest('.todo-element-delete') !== null) {
-            e.target.closest('.added-destination').remove();
-            if (todoForm1.parentNode.style.visibility === 'hidden') {
-                todoList1.lastElementChild.remove();
-            }
-            todoForm1.parentNode.style.visibility = 'visible';
+    const destination2 = new addDestination(todoList2, todoForm2);
+    todoForm2.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (todoList2.childElementCount < 3) {
+            destination2.init();
+        } else  {
+            todoForm2.parentNode.style.visibility = 'hidden';
+            destination2.addInformation();
         }
     });
-
+    destination2.removeElement();
 });

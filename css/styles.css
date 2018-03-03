@@ -667,7 +667,6 @@ h2 span {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 42rem;
     background-color: #ffffa6;
     border-radius: 5px;
 }
@@ -967,7 +966,6 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
     width: 90%;
 }
 
