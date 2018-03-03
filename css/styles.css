@@ -463,21 +463,53 @@ h2 span {
     font-size: 16px;
     line-height: 35px;
     text-transform: uppercase;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
 }
 
 .search-content .btn-place .active {
     color: #777777;
     font-family: "Lato - Black";
+
 }
 
-.search-content .btn-place p {
+.search-content .btn-place {
     color: #777777;
     font-family: "Lato - Black";
     margin: 0 10px;
 }
 
-.search-content .btn-place a:hover {
+.search-content .btn-place .btn-gallery:hover {
     color: #777777;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /* Gallery */
@@ -489,7 +521,7 @@ h2 span {
 }
 
 .container .major-gallery {
-    width: 90%;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
@@ -568,7 +600,7 @@ h2 span {
 .minor-gallery {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin-bottom: 4rem;
 }
 
@@ -797,6 +829,7 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     cursor: pointer;
     border: none;
     position: relative;
+    outline: 0;
 }
 
 .todo-add-btn::after {

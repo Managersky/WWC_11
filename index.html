@@ -90,12 +90,13 @@
 						<input class="search" type="search" placeholder="search destination" name="search-gallery" />
 					</div>
 					<div class="btn-place">
-						<a href="#" class="btn-gallery active">All place</a>
+						<button class="btn-gallery active" onclick="currentSlide(1)">All place</button>
 						<p>/</p>
-						<a href="#" class="btn-gallery">Recomended place</a>
+						<button class="btn-gallery" onclick="currentSlide(2)">Recomended place</button>
 					</div>
 				</div>
-				<section class="major-gallery">
+				<div class="gallery-slides fade">
+					<section class="major-gallery">
 					<div class="main-graphic">
 						<div class="btn-shadow">
 							<img src="images/parachute.png" alt="parachutes">
@@ -143,6 +144,10 @@
 						</div>
 
 				</section>
+				</div>
+				<div class="gallery-slides fade">
+					<p>Here will be gallery soon</p>
+				</div>
 				<div class="pagination">
 					<a class="active" href="#">1</a>
 					<a href="#">2</a>
@@ -461,6 +466,8 @@
 	<!-- Scroll to  -->
 	<script src="js/jquery.scrollTo.min.js" defer></script>
 	<script src="js/scrollTo.js" defer></script>
+	<!-- Gallery section -->
+	<script src="js/slider.js" defer></script>
 	<!-- Ittinery box -->
 	<script src="js/ittineryToDo.js" defer></script>
 	<script src="js/calendar.js" defer></script>
