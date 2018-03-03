@@ -51,7 +51,7 @@
 			<div class="container">
 				<div class="section-header">
 					<h2>Lets get <span>lost</span></h2>
-					<p>Malang will never dissapointed you. <br>From every step you took you will be amazed and suddenly fallin love with Malang</p>
+					<p>Malang will never dissapointed you. From every step you took you will be amazed and suddenly fallin love with Malang</p>
 				</div>
 				<div class="intro-cta">
 					<a href="#" class="btn btn-primary" id="cta-btn">Set ittinery now</a>
@@ -356,13 +356,23 @@
 				<div class="contact-content">
 					<div class="contact-form">
 						<form class="form" method="post" action="#">
-							<input class="btn-email" type="email" placeholder="Your Email" name="your-email" data-error="Email should have @" required/>
-							<div class="form-middle-content">
-								<input class="btn-info" type="text" placeholder="Company" name="company" data-error="incorrect comapny name" required/>
-								<input class="btn-info" type="text" placeholder="Subject" name="subject" data-error="incorrect subject name"required/>
+							<div class="field">
+								<input class="btn-email" type="email" placeholder="Your Email" name="your-email" data-error="Email should have @" required/>
 							</div>
-							<textarea placeholder="Your Messages" data-error="fill this area"required></textarea>
-							<input type="submit" class="btn btn-message" value="Send message" />
+							<div class="form-middle-content">
+								<div class="field">
+									<input class="btn-info" type="text" placeholder="Company" name="company" data-error="incorrect comapny name" required/>
+								</div>
+								<div class="field">
+									<input class="btn-info" type="text" placeholder="Subject" name="subject" data-error="incorrect subject name"required/>
+								</div>
+							</div>
+							<div class="field_textarea">
+								<textarea placeholder="Your Messages" data-error="fill this area"required></textarea>
+							</div>
+							<div>
+								<input type="submit" class="btn btn-message" value="Send message" />
+							</div>
 						</form>
 					</div>
 					<div class="separator">
@@ -404,6 +414,7 @@
 						<p>We Will Give you latest information about Malang</p>
 					</div>
 					<form action="#" class="form btn-subscribe">
+						<div class="field"></div>
 							<input type="email" placeholder="Type Email Here for Subscribe" class="subscribe-email" name="your email" data-error="Email should have @" required>
 							<input type="submit" class="btn-subscribe-arrow" value=""/>
 					</form>

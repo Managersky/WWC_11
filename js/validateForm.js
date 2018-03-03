@@ -18,13 +18,13 @@ const validateForm = (function()
         const field = input.closest('.error');
         const fieldError = field.parentNode.querySelector('.field-error');
 
-        if (fieldError === null) {
-        const divError = document.createElement('div');
-        const errorText = input.dataset.error;
-        divError.classList.add('field-error');
-        divError.innerText = errorText;
-        field.parentNode.appendChild(divError);
-        }
+             if (fieldError === null) {
+                const divError = document.createElement('div');
+                const errorText = input.dataset.error;
+                divError.classList.add('field-error');
+                divError.innerText = errorText;
+                field.parentNode.appendChild(divError);
+            }
 
     };
 
@@ -133,7 +133,7 @@ const validateForm = (function()
             });
 
             if (validated) {
-                this.classList.add('submit-busy');
+                this.lastElementChild.classList.add('submit-busy');
                 this.disabled = true;
                 // this.submit();
             } else {

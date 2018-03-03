@@ -1225,13 +1225,21 @@ input#search::-webkit-input-placeholder {
     padding-left: 23px;
 }
 
+.contact-form .field {
+    width: 100%;
+}
+
+.form-middle-content .field {
+    width: 48%;
+}
+
 .contact-form form .btn-email {
     width: 100%;
-    min-height: 55px; 
+    min-height: 55px;
 }
 
 .contact-form form .btn-info {
-    width: 48%;
+    width: 100%;
     min-height: 55px;
 }
 
@@ -2109,38 +2117,34 @@ input#search::-webkit-input-placeholder {
 
 /* Tips for users */
 
-.form {
-    position: relative;
-}
-
 .form .error {
-    color: rgb(219, 8, 62);
-}
-
-.form .error input[type=text],
-.form .error input[type="email"] {
-    color: rgb(219, 8, 62);
-    background: rgb(255, 237, 237);
-    background-position: calc(100% - 5px) center;
-}
-
-.form .error textarea {
-    background-position: calc(100% - 5px) 10px;
-    background: rgb(255, 237, 237)
+    background: rgb(250, 246, 185);
+    position: relative;
 }
 
 /* field for validation */
 
-.form .field-error {
+.form .field,
+.form .field_textarea {
+    position: relative;
+}
+
+.form .field > .field-error,
+.form .field_textarea .field-error {
     position: absolute;
     font-size: 1rem;
-    color: rgb(219, 8, 62);
-    top: 95%;
+    color: rgb(255, 241, 44);
+    bottom: -7%;
+    left: 1%;
+}
+
+.form .field_textarea {
+    width: 100%;
 }
 
 .form .field_textarea .field-error {
-    top: 102%;
-    left: 6%;
+    top: 95%;
+    left: 1%;
 }
 
 /* add loading animation to btn with this class */
