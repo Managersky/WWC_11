@@ -641,6 +641,28 @@ h2 span {
     width: auto;
 }
 
+/* Second Gallery - Recomended places */
+
+.gallery-constainer {
+    max-width: 900px;
+    /* width: 80%; */
+    margin: auto;
+    border: 3px solid #f2fefe;
+    background: #f2fefe;
+}
+
+.main-img img,
+.imgs img {
+    width: 100%;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-top: 5px;
+}
+
 /* Pagitation */
 
 .pagination {
