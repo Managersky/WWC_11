@@ -858,8 +858,8 @@ input[type="text"].btn-title::-webkit-input-placeholder {
     justify-content: center;
     align-items: center;
     min-height: 70px;
-    background-color: #f5e99e;
-    border: 3px solid rgba(255, 0, 0, 0.09);
+    background-color: #fbf6a3;
+    border: 3px dashed #e8e897;
     border-radius: 5px;
     margin: 32px 0;
 }
@@ -2145,6 +2145,22 @@ input#search::-webkit-input-placeholder {
 .form .field_textarea .field-error {
     top: 95%;
     left: 1%;
+}
+
+.btn-subscribe .field {
+    width: 100%;
+    display: flex;
+}
+
+.btn-subscribe .error {
+    background: rgb(255, 237, 237);
+    position: relative;
+}
+
+.btn-subscribe .field .field-error {
+    position: absolute;
+    color: rgb(219, 8, 62);
+    top: 96%;
 }
 
 /* add loading animation to btn with this class */
