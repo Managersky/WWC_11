@@ -630,7 +630,10 @@ h2 span {
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
+    color: #01a2a6;
+    font-size: 24px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
 }
 
 /* Planning Section */
