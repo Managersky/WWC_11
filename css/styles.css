@@ -696,7 +696,6 @@ h2 span {
 
 .gallery-constainer figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
     text-align: left;
 }
 
@@ -715,26 +714,31 @@ h2 span {
 
 .gallery-constainer figure.effect-apollo h2 {
     position: absolute;
-    left: 0;
-    bottom: 180px;
+    left: 5px;
+    bottom: 205px;
     padding: 0 1em;
-    color: yellow;
+    color: #29d9c2;
     max-width: 150px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
 .gallery-constainer figure.effect-apollo p {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -30px;
     margin: 3em;
     padding: 0 1em;
-    color: yellow;
-    max-width: 150px;
-    border-left: 4px solid #fff;
+    color: #ffffa6;
+    max-width: 250px;
+    border-left: 4px solid #ffffa6;
     text-align: left;
     opacity: 0;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
+    text-shadow: 2px 2px black;
 }
 
 .gallery-constainer figure.effect-apollo:hover img {
@@ -743,6 +747,7 @@ h2 span {
     transform: scale3d(1, 1, 1);
 }
 
+.gallery-constainer figure.effect-apollo:hover h2,
 .gallery-constainer figure.effect-apollo:hover p {
     opacity: 1;
     -webkit-transition-delay: 0.1s;
