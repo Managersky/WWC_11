@@ -38,7 +38,7 @@ let width = screen.width;
 	checkScreenSize();
 })();
 
-// $(window).bind('resolutionchange', function () {
+$(window).bind('resolutionchange', function () {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1300) {
 			$('.scrollup').fadeIn();
@@ -47,5 +47,5 @@ let width = screen.width;
 			$('.scrollup').fadeOut();
 		}
 	});
-// });
+});
 

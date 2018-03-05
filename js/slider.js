@@ -25,6 +25,6 @@ function showSlides(n) {
     for (i = 0; i < btns.length; i++) {
         btns[i].className = btns[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "inline-block";
     btns[slideIndex - 1].className += " active";
 }
