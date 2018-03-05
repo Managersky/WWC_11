@@ -14,4 +14,4 @@ Weekly WebDev Challenge - Task 11
 - On itinerary box, for destination "Batu City" I didn't prepare example list of destination
 
 ## Live:
-https://managersky.github.io/WWC_11/
+https://witoldmetel.github.io/WWC_11/
