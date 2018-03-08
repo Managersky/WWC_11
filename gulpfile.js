@@ -16,7 +16,7 @@ var sequence = require("run-sequence"); //odpalenie zadan synchronicznie (gulp m
 var deploy = require("gulp-gh-pages"); //push strony na github-pages
 
 var path = {
-    dest: "dist/",
+    dist: "dist/",
     src: "src/",
     cssin: "src/css/**/*.css",
     jsin: "src/js/**/*.js",
@@ -95,9 +95,9 @@ gulp.task("html", function () {
             sortAttributes: true, //sortowanie po atrybutach
             sortClassName: true, //sortowanie po klasach
             //oba sortowania są istotne dla gzipa - optymalizacja pod katem predkosci ladowania
-            collapseWhitespace: true //usuwa wszystkie biale znaki
+            // collapseWhitespace: true //usuwa wszystkie biale znaki
         }))
-        .pipe(gulp.dest(path.dest));
+        .pipe(gulp.dest(path.dist));
 });
 
 gulp.task("fonts", function () {
@@ -106,7 +106,7 @@ gulp.task("fonts", function () {
 });
 
 gulp.task("clean", function () {
-    return del([path.dest]);
+    return del([path.dist]);
 });
 
 gulp.task("build", function () {
