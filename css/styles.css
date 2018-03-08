@@ -1827,6 +1827,88 @@ input#search::-webkit-input-placeholder {
     background-color: #29d9c2;
 }
 
+/* Tips for users */
+
+.form .error {
+    background: rgb(250, 246, 185);
+    position: relative;
+}
+
+/* field for validation */
+
+.form .field,
+.form .field_textarea {
+    position: relative;
+}
+
+.form .field>.field-error,
+.form .field_textarea .field-error {
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(255, 241, 44);
+    bottom: -7%;
+    left: 1%;
+}
+
+.form .field_textarea {
+    width: 100%;
+}
+
+.form .field_textarea .field-error {
+    top: 95%;
+    left: 1%;
+}
+
+.btn-subscribe .field {
+    width: 100%;
+    display: flex;
+}
+
+.btn-subscribe .error {
+    background: rgb(255, 237, 237);
+    position: relative;
+}
+
+.btn-subscribe .field .field-error {
+    position: absolute;
+    color: rgb(219, 8, 62);
+    top: 96%;
+}
+
+/* add loading animation to btn with this class */
+
+.submit-busy {
+    position: relative;
+    /* pointer-events specifies under what circumstances (if any) a particular graphic element can become the target of mouse events. */
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.submit-busy::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotateSingleLoading 0.3s infinite linear;
+}
+
+/* Loading animation */
+
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 /* Media Queries*/
 
 @media (max-width: 1024px) {
@@ -2387,92 +2469,15 @@ input#search::-webkit-input-placeholder {
         flex-direction: row;
         font-size: 16px;
     }
+    .form .field>.field-error,
+    .form .field_textarea .field-error {
+        font-size: 0.7rem;
+    }
+
 }
 
  @media screen and (orientation:landscape) {
      .intro-section {
          min-height: 90%;
      }
-}
-
-/* Tips for users */
-
-.form .error {
-    background: rgb(250, 246, 185);
-    position: relative;
-}
-
-/* field for validation */
-
-.form .field,
-.form .field_textarea {
-    position: relative;
-}
-
-.form .field > .field-error,
-.form .field_textarea .field-error {
-    position: absolute;
-    font-size: 1rem;
-    color: rgb(255, 241, 44);
-    bottom: -7%;
-    left: 1%;
-}
-
-.form .field_textarea {
-    width: 100%;
-}
-
-.form .field_textarea .field-error {
-    top: 95%;
-    left: 1%;
-}
-
-.btn-subscribe .field {
-    width: 100%;
-    display: flex;
-}
-
-.btn-subscribe .error {
-    background: rgb(255, 237, 237);
-    position: relative;
-}
-
-.btn-subscribe .field .field-error {
-    position: absolute;
-    color: rgb(219, 8, 62);
-    top: 96%;
-}
-
-/* add loading animation to btn with this class */
-
-.submit-busy {
-    position: relative;
-    /* pointer-events specifies under what circumstances (if any) a particular graphic element can become the target of mouse events. */
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-.submit-busy::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-right-color: rgba(0, 0, 0, 0.7);
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotateSingleLoading 0.3s infinite linear;
-}
-
-/* Loading animation */
-
-@keyframes rotateSingleLoading {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
 }
