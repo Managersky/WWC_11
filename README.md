@@ -4,7 +4,7 @@ Weekly WebDev Challenge - Task 11
 ## Purpose:
 
 - practice PSD --> HTML/CSS
-- practice RWD, Flexbox, JS scripts
+- practice RWD, Flexbox, JS scripts, Sass and Gulp
 - first JQuery scripts
 
 ## Problems:
