@@ -1,0 +1,506 @@
+<!DOCTYPE = html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>WWC-11</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+
+	<!-- css:build -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- endbuild -->
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<a href="#" class="scrollup"></a>
+
+		<header class="page-header">
+			<div class="container">
+				<a href="#">
+					<p class="company-name"><span>Yok</span>Ngalam</p>
+				</a>
+				<div class="nav-toggle">
+					<div class="nav-toggle-bar"></div>
+				</div>
+				<nav class="nav">
+					<ul class="menu-items menu-header">
+						<li><a href="#" class="active" id="itemHome">Home</a></li>
+						<li><a href="#" id="itemDestination">Destination</a></li>
+						<li><a href="#" id="itemIttinary">Ittinary</a></li>
+						<li><a href="#" id="itemReview">Review</a></li>
+						<li><a href="#" id="itemContact">Contact</a></li>
+						<li class="account-btn">
+							<a href="#" class="user-account"></a>
+							<div class="dropdown">
+								<a href="#">My ittinary</a>
+								<a href="#">Settings</a>
+								<a href="#">Logout</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+
+		<section class="intro-section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Lets get <span>lost</span></h2>
+					<p>Malang will never dissapointed you. From every step you took you will be amazed and suddenly fallin love with Malang</p>
+				</div>
+				<div class="intro-cta">
+					<a href="#" class="btn btn-primary" id="cta-btn">Set ittinery now</a>
+				</div>
+			</div>
+		</section>
+		<section class="info-section">
+			<div class="container">
+				<img src="images/building.png" alt="building-graphic">
+				<div class="page-info">
+					<h2>City of <span>Love</span></h2>
+					<p>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom.
+					The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery-section">
+			<div class="container">
+				<div class="info-content">
+					<div class="page-info">
+						<h2>Des<span>tination</span></h2>
+						<p>Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest
+						is worth to experienced.</p>
+					</div>
+					<div class="btn-information">
+						<a href="#">
+							<img src="images/info-icon.png" alt="information icon">
+							<p>see basic regulation</p>
+						</a>
+					</div>
+				</div>
+				<div class="search-content">
+					<div class="btn-search">
+						<img src="images/magnifier-icon.png" alt="magnifier icon">
+						<input class="search" type="search" placeholder="search destination" name="search-gallery" />
+					</div>
+					<div class="btn-place">
+						<button class="btn-gallery active" onclick="currentSlide(1)">All place</button>
+						<p>/</p>
+						<button class="btn-gallery" onclick="currentSlide(2)">Recomended place</button>
+					</div>
+				</div>
+				<div class="gallery-slides fade">
+					<section class="major-gallery">
+					<div class="main-graphic">
+						<div class="btn-shadow">
+							<img src="images/parachute.png" alt="parachutes">
+							<a href="#" class="see-more-btn">
+								<p>see more</p>
+								<img src="images/arrow-icon.png" alt="arrow icon">
+							</a>
+						</div>
+						<img class="layout-gallery" src="images/layout-gallery.png" alt="layout gallery">
+						<div class="page-info">
+							<img src="images/carousel-icon.png" alt="carousel-graphic">
+							<h3>Batu</h3>
+							<p> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it
+								was a part of Malang Regency; but in 2001, Batu became an independent city. A population of 190,000 people, it lies on the
+								southern slopes of Gunung Welirang. Its population largely consists of Javanese.</p>
+						</div>
+					</div>
+				</section>
+				<section class="minor-gallery">
+					<div class="main-graphic">
+						<div class="btn-shadow">
+							<img class="mountain-pic" src="images/mountains-background.png" alt="mountains">
+							<a href="#" class="see-more-btn">
+								<p>see more</p>
+								<img src="images/arrow-icon.png" alt="arrow icon">
+							</a>
+						</div>
+						<img class="layout-gallery-small" src="images/layout-gallery-small.png" alt="layout gallery">
+						<div class="page-info">
+							<img src="images/mountains-icon.png" alt="montains-graphic">
+							<h3>Bromo</h3>
+							<p><span class="bold-font">Mount Bromo</span> is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is
+								not the highest peak of the massif, but is the most well known</p>
+						</div>
+
+					</div>
+
+						<div class="btn-shadow">
+							<img class="canoe-pic" src="images/canoe-background.png" alt="canoe">
+							<a href="#" class="see-more-btn">
+								<p>see more</p>
+								<img src="images/arrow-icon.png" alt="arrow icon">
+							</a>
+							<img class="palm-icon" src="images/island-icon.png" alt="island icon">
+						</div>
+
+				</section>
+				</div>
+				<div class="gallery-slides fade">
+					<div class="gallery-constainer">
+						<figure class="main-img effect-apollo">
+							<img src="images/gallery-images/img1.jpg" alt="Tourism Village Jodipan" id="current">
+							<figcaption>
+								<h2>Tourism Village Jodipan</h2>
+								<p>Colorful houses located beside Brantas River</p>
+								<a href="#">View more</a>
+							</figcaption>
+						</figure>
+						<figure class="imgs">
+							<img src="images/gallery-images/img1.jpg" alt="Tourism Village Jodipan" title="Tourism Village Jodipan" data-text="Colorful houses located beside Brantas River">
+							<img src="images/gallery-images/img2.jpg" alt="Museum Brawijaya" title="Museum Brawijaya" data-text="A great museum to instill somekind of heroism">
+							<img src="images/gallery-images/img3.jpg" alt="Badut Temple" title="Badut Temple" data-text="The eldest temple in East Java which is located in Malang">
+							<img src="images/gallery-images/img4.jpg" alt="Taman Singha Merjosari" title="Taman Singha Merjosari" data-text="Spacious and beautiful garden. Great for relax and walking">
+							<img src="images/gallery-images/img5.jpg" alt="Taman Wisata Wendit" title="Taman Wisata Wendit" data-text="Water Park in Malang. Have great time with your family!">
+							<img src="images/gallery-images/img6.jpg" alt="Tugu City Park" title="Tugu City Park" data-text="The 66-acre urban forest park. The biggest park in Java!">
+						</figure>
+					</div>
+				</div>
+				<div class="pagination">
+					<a class="active" href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">❯</a>
+					<a href="#">❯❯</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="planner-section">
+			<div class="container">
+				<div class="page-info">
+					<h2>Set <span>Ittinery</span></h2>
+					<p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. Have a great trip!</p>
+				</div>
+				<div class="planner-section-content">
+				<section class="planning-menu">
+					<div class="ittinery-box" id="content-to-print">
+						<div class="ittinery-title">
+							<input class="btn-title" type="text" placeholder="Your Ittinery Title Here" name="Ittinery-title" />
+						</div>
+						<div class="ittinery-content">
+							<div class="ittinery-timetable">
+								<p>Day 1</p>
+								<div class="input-calendar-cnt">
+									<p class="calendar-btn input-calendar">Pick date</p>
+									<div class="calendar">
+										<div class="calendar-header">
+											<div class="calendar-prev-next"></div>
+											<div class="date-name"></div>
+										</div>
+									<div class="calendar-table-cnt"></div>
+									</div>
+								</div>
+							</div>
+							<div class="destination-status">
+								<div class="destination-status-image">
+									<img src="images/mountains-icon.png" alt="mountains icon">
+								</div>
+								<div class="destination-status-information">
+									<p class="name">Mt. Bromo</p>
+									<p class="hours">03.30 - 09.30</p>
+								</div>
+							</div>
+							<div class="sub-destination" id="todoList1"></div>
+							<div class="btn-add-destination" title="add sub destination">
+								<button type="submit" class="todo-add-btn" id="todoForm1">add sub destination</button>
+							</div>
+							<div class="destination-status">
+								<div class="destination-status-image">
+									<img src="images/carousel-icon.png" alt="caorusel icon">
+								</div>
+								<div class="destination-status-information">
+									<p class="name">Batu City</p>
+									<p class="hours">10.00 - 15.00</p>
+								</div>
+							</div>
+							<div class="sub-destination" id="todoList2">
+								<div class="added-destination">
+									<div class="top-element-bar">
+										<p class="todo-element-text">Enjoy Malang while Listening Music</p>
+										<button class="todo-element-delete" title="delete sub destination">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</div>
+								<div class="added-destination">
+									<div class="top-element-bar">
+										<p class="todo-element-text">Gonna Eat BAKSO</p>
+										<button class="todo-element-delete" title="delete sub destination">
+											<i class="fas fa-times-circle"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="btn-add-destination" title="add sub destination">
+								<button type="submit" class="todo-add-btn" id="todoForm2">add sub destination</button>
+							</div>
+							<div class="ittinery-timetable">
+								<p>Day 2</p>
+								<div class="input-calendar-cnt">
+									<p class="calendar-btn2 input-calendar">Pick date</p>
+									<div class="calendar">
+										<div class="calendar-header">
+											<div class="calendar-prev-next"></div>
+											<div class="date-name"></div>
+										</div>
+									<div class="calendar-table-cnt"></div>
+									</div>
+								</div>
+							</div>
+							<div class="drag-destination" id="drop-zone"></div>
+						</div>
+					</div>
+					<div class="btn-planning">
+						<a class="btn btn-save-as-pdf" id="savePDF"><img src="images/book-of-wisdom.png" alt="book icon">Save as pdf</a>
+						<a class="btn btn-print" id="print"><img src="images/printer.png" alt="printer icon">Print</a>
+					</div>
+				</section>
+				<section class="destination-list">
+					<div class="destination-list-content">
+						<p class="title">List of Destination</p>
+						<div class="sort-list">
+							<div class="sort-list-content">
+								<p>sort by : </p>
+								<div class="sort-by">
+									<p class="destination-name">All</p>
+									<div class="dropdown">
+										<a href="#" data-category="all" class="sort-destination">All</a>
+										<a href="#" data-category="mountain" class="sort-destination">Mountain</a>
+										<a href="#" data-category="city" class="sort-destination">City</a>
+									</div>
+								</div>
+							</div>
+						<label for="search" class="search-destination">
+							<input id="search" type="search" placeholder="search">
+						</label>
+
+						</div>
+						<div id="destination-choose-list">
+							<div class="destination-choose" draggable="true" data-category="mountain">
+							<div class="destination-choose-info">
+								<h4>Mt. Kawi</h4>
+								<p>estimated time: <span class="bold-font">5 </span><span>Hours</span></p>
+							</div>
+							<div class="destination-choose-details">
+								<a href="#">
+									<img src="images/mountains-icon.png">
+									<p>view details</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="destination-choose" draggable="true" data-category="mountain">
+							<div class="destination-choose-info">
+								<h4>Mt. Panderman</h4>
+								<p>estimated time:
+									<span class="bold-font">5 </span>
+									<span>Hours</span>
+								</p>
+							</div>
+							<div class="destination-choose-details">
+								<a href="#">
+									<img src="images/mountains-icon.png">
+									<p>view details</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="destination-choose" draggable="true" data-category="mountain">
+							<div class="destination-choose-info">
+								<h4>Mt. Semeru</h4>
+								<p>estimated time:
+									<span class="bold-font">5 </span>
+									<span>Hours</span>
+								</p>
+							</div>
+							<div class="destination-choose-details">
+								<a href="#">
+									<img src="images/mountains-icon.png">
+									<p>view details</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="destination-choose" draggable="true" data-category="city">
+							<div class="destination-choose-info">
+								<h4>Lawang City</h4>
+								<p>estimated time:
+									<span class="bold-font">5 </span>
+									<span>Hours</span>
+								</p>
+							</div>
+							<div class="destination-choose-details">
+								<a href="#">
+									<img class="city" src="images/carousel-icon.png">
+									<p>view details</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="destination-choose" draggable="true" data-category="city">
+							<div class="destination-choose-info">
+								<h4>Malang City</h4>
+								<p>estimated time:
+									<span class="bold-font">5 </span>
+									<span>Hours</span>
+								</p>
+							</div>
+							<div class="destination-choose-details">
+								<a href="#">
+									<img class="city"src="images/carousel-icon.png">
+									<p>view details</p>
+								</a>
+							</div>
+						</div>
+						</div>
+
+					</div>
+				</section>
+			</div>
+			</div>
+		</section>
+
+		<section class="contact-section">
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="contact-content">
+					<div class="contact-form">
+						<form class="form" method="post" action="#">
+							<div class="field">
+								<input class="btn-email" type="email" placeholder="Your Email" name="your-email" data-error="Email should have @" required/>
+							</div>
+							<div class="form-middle-content">
+								<div class="field">
+									<input class="btn-info" type="text" placeholder="Company" name="company" data-error="Incorrect comapny name" required/>
+								</div>
+								<div class="field">
+									<input class="btn-info" type="text" placeholder="Subject" name="subject" data-error="Incorrect subject name"required/>
+								</div>
+							</div>
+							<div class="field_textarea">
+								<textarea placeholder="Your Messages" data-error="Fill this area"required></textarea>
+							</div>
+							<div>
+								<input type="submit" class="btn btn-message" value="Send message" />
+							</div>
+						</form>
+					</div>
+					<div class="separator">
+						<p>or</p>
+					</div>
+					<div class="contact-info">
+						<h3>You Can Find Us Here</h3>
+						<div class="contact-us">
+							<a href="#">
+								<img src="images/home-icon.png" alt="home icon">
+								<p>Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</p>
+							</a>
+							<a href="https://www.google.pl/maps/place/Jl.+Danau+Bratan,+Madyopuro,+Kedungkandang,+Kota+Malang,+Jawa+Timur+65139,+Indonezja/@-7.9778895,112.6637309,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd6285fa858f6a1:0xb534251e18b3fd9b!8m2!3d-7.9778948!4d112.6659196" target="_blank">
+								<span>Find on Maps</span>
+							</a>
+						</div>
+						<div class="contact-us">
+							<a href="#">
+								<img src="images/user-icon.png" alt="person icon">
+								<p>(+62) 8816723812</p>
+							</a>
+						</div>
+						<div class="contact-us">
+							<a href="#">
+								<img src="images/user-icon.png" alt="person icon">
+								<p>(+62) 8512371632</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="subscribe-section">
+			<div class="container">
+				<div class="subscribe-content">
+					<div class="page-info">
+						<h2>Keep in Touch</h2>
+						<p>We Will Give you latest information about Malang</p>
+					</div>
+					<form action="#" class="form btn-subscribe">
+						<div class="field">
+							<input type="email" placeholder="Type Email Here for Subscribe" class="subscribe-email" name="your email" data-error="Email should have @" required>
+							<input type="submit" class="btn-subscribe-arrow" value=""/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		</main>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="footer-content">
+					<nav>
+						<ul class="menu-items first-nav">
+							<li><a href="#">Term & Condition</a></li>
+							<li><a href="#">Policy</a></li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+					</nav>
+					<nav>
+						<ul class="menu-items second-nav">
+							<li class="menu-icon"><a href="#" class="facebook-icon"></a></li>
+							<li class="menu-icon"><a href="#" class="twitter-icon"></a></li>
+							<li class="menu-icon"><a href="#" class="instagram-icon"></a></li>
+						</ul>
+					</nav>
+				</div>
+				<p>copyright@YokMalang. Allright Reserved. 2015</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- js:build -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+	<!-- Hamburger menu -->
+	<script src="js/hamburgerMenu.js" defer></script>
+	<!-- Dropdown menu -->
+	<script src="js/dropdownMenu.js" defer></script>
+	<!-- Scroll to  -->
+	<script src="js/jquery.scrollTo.min.js" defer></script>
+	<script src="js/scrollTo.js" defer></script>
+	<!-- Gallery section -->
+	<script src="js/slider.js" defer></script>
+	<script src="js/modernGalleryES6.js"></script>
+	<!-- Ittinery box -->
+	<script src="js/ittineryToDo.js" defer></script>
+	<script src="js/calendar.js" defer></script>
+	<script src="js/sortDestination.js" defer></script>
+	<script src="js/dragDropSwap.js" defer></script>
+	<!-- Print and save as PDF -->
+	<script src="js/jquery-printme.min.js" defer></script>
+	<script src="js/printContent.js" defer></script>
+	<!-- Validate Forms -->
+	<script src="js/validateForm.js" defer></script>
+	<!-- endbuild -->
+
+</body>
+</html>
