@@ -23,8 +23,8 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < btns.length; i++) {
-        btns[i].className = btns[i].className.replace(" active", "");
+        btns[i].className = btns[i].className.replace(" active-btn", "");
     }
     slides[slideIndex - 1].style.display = "inline-block";
-    btns[slideIndex - 1].className += " active";
+    btns[slideIndex - 1].className += " active-btn";
 }

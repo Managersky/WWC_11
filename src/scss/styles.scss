@@ -441,7 +441,7 @@ h2 {
             cursor: pointer;
             outline: 0;
         }
-        .active {
+        .active-btn {
             color: #777777;
             font-family: "Lato - Black";
         }
@@ -2205,9 +2205,6 @@ input#search::-webkit-input-placeholder {
     .search-content .btn-place .btn-gallery {
         font-size: 11px;
     }
-    /* .minor-gallery .page-info {
-      overflow-y: scroll;
-  } */
     .layout-gallery,
     .layout-gallery-small {
         display: none;
@@ -2234,6 +2231,14 @@ input#search::-webkit-input-placeholder {
     }
     .pagination {
         margin-top: 2rem;
+    }
+    .gallery-constainer figure {
+        &.effect-apollo {
+            h2 {
+                font-size: 27px;
+                bottom: 110px;
+            }
+        }
     }
     /* planner-section */
     .calendar {
