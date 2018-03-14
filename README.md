@@ -1,6 +1,8 @@
 # WWC_11
 Weekly WebDev Challenge - Task 11
 
+Tourist landing page
+
 ## Purpose:
 
 - practice PSD --> HTML/CSS
